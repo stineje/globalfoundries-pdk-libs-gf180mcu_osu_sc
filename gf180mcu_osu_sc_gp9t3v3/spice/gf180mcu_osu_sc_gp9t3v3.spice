@@ -1,0 +1,1054 @@
+****BOF - gf180mcu_osu_sc_gp9t3v3__addf_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__addf_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__addf_1 A B CI S CO VDD VSS
+X0 S a_161_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 a_178_72# A a_161_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 a_110_72# CI VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 a_195_21# B a_178_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 a_59_21# CI a_9_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 VDD B a_110_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 a_178_21# A a_161_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 VDD A a_9_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X8 a_110_21# CI VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X9 CO a_59_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X10 a_59_21# CI a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X11 VSS B a_110_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X12 VDD CI a_195_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X13 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X14 CO a_59_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+X15 VSS CI a_195_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X16 VDD A a_76_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X17 a_161_21# a_59_21# a_110_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X18 a_76_72# B a_59_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X19 a_9_72# B VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X20 a_110_72# A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X21 VSS A a_76_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X22 a_161_21# a_59_21# a_110_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X23 a_76_21# B a_59_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X24 S a_161_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X25 a_9_21# B VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X26 a_110_21# A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X27 a_195_72# B a_178_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__addf_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__addh_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__addh_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__addh_1 A B S CO VDD VSS
+X0 VDD a_19_16# a_91_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.68p ps=2.5u w=1.7u l=0.3u
+X1 VDD B a_19_16# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 VSS a_19_16# a_75_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.34p ps=1.65u w=0.85u l=0.3u
+X3 VDD a_19_16# CO VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 a_19_16# B a_42_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 VSS a_19_16# CO VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X6 S a_91_21# VDD VDD pfet_03v3 ad=1.28p pd=4.9u as=0.468p ps=2.25u w=1.7u l=0.3u
+X7 a_91_72# A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X8 a_19_16# A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 S a_91_21# VSS VSS nfet_03v3 ad=0.638p pd=3.2u as=0.233p ps=1.4u w=0.85u l=0.3u
+X10 a_91_21# B a_91_72# VDD pfet_03v3 ad=0.68p pd=2.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X11 a_91_21# A a_75_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X12 a_42_21# A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X13 a_75_21# B a_91_21# VSS nfet_03v3 ad=0.34p pd=1.65u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__addh_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__and2_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__and2_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__and2_1 A B Y VDD VSS
+X0 VSS B a_28_21# VSS nfet_03v3 ad=0.383p pd=1.75u as=0.105p ps=1.1u w=0.85u l=0.3u
+X1 Y a_12_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.638p ps=2.45u w=1.7u l=0.3u
+X2 Y a_12_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.383p ps=1.75u w=0.85u l=0.3u
+X3 a_12_21# A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 VDD B a_12_21# VDD pfet_03v3 ad=0.638p pd=2.45u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 a_28_21# A a_12_21# VSS nfet_03v3 ad=0.105p pd=1.1u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__and2_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__ant.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__ant.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__ant A VDD VSS
+X0 VDD A A VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 A A A VSS nfet_03v3 ad=0.425p pd=2.7u as=0.85p ps=5.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__ant.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__antfill.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__antfill.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__antfill VDD VSS A
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__antfill.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__aoi21_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__aoi21_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__aoi21_1 A0 A1 B Y VDD VSS
+X0 Y A1 a_28_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.105p ps=1.1u w=0.85u l=0.3u
+X1 Y B a_9_72# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 VDD A0 a_9_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X3 VSS B Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 a_9_72# A1 VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 a_28_21# A0 VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__aoi21_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__aoi22_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__aoi22_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__aoi22_1 A0 A1 B0 B1 Y VDD VSS
+X0 Y A1 a_28_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.105p ps=1.1u w=0.85u l=0.3u
+X1 Y B0 a_9_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 VDD A0 a_9_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X3 a_56_21# B0 Y VSS nfet_03v3 ad=0.105p pd=1.1u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 VSS B1 a_56_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+X5 a_9_72# B1 Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 a_9_72# A1 VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X7 a_28_21# A0 VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__aoi22_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__buf_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__buf_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__buf_1 A Y VDD VSS
+X0 VDD A a_9_21# VDD pfet_03v3 ad=0.553p pd=2.35u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 VSS A a_9_21# VSS nfet_03v3 ad=0.275p pd=1.5u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 Y a_9_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.553p ps=2.35u w=1.7u l=0.3u
+X3 Y a_9_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.275p ps=1.5u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__buf_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__buf_16.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__buf_16.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__buf_16 A Y VDD VSS
+X0 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 VDD a_9_21# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X7 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X8 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X10 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X11 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X12 VSS a_9_21# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X13 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X14 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X15 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X16 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X17 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X18 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X19 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X20 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X21 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X22 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X23 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X24 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X25 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X26 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X27 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X28 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X29 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X30 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X31 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X32 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X33 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__buf_16.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__buf_2.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__buf_2.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__buf_2 A Y VDD VSS
+X0 VDD a_9_21# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 VSS a_9_21# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X3 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X4 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__buf_2.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__buf_4.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__buf_4.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__buf_4 A Y VDD VSS
+X0 VSS a_10_20# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 VDD a_10_20# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 Y a_10_20# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 Y a_10_20# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X4 VSS a_10_20# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 VDD A a_10_20# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X6 Y a_10_20# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 Y a_10_20# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X8 VSS A a_10_20# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X9 VDD a_10_20# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__buf_4.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__buf_8.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__buf_8.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__buf_8 A Y VDD VSS
+X0 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X6 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X8 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD a_9_21# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X10 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X11 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X12 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X13 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X14 VSS a_9_21# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X15 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X16 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X17 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__buf_8.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkbuf_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkbuf_1 A Y VDD VSS
+X0 VDD A a_9_21# VDD pfet_03v3 ad=0.553p pd=2.35u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 VSS A a_9_21# VSS nfet_03v3 ad=0.275p pd=1.5u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 Y a_9_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.553p ps=2.35u w=1.7u l=0.3u
+X3 Y a_9_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.275p ps=1.5u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_16.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkbuf_16.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkbuf_16 A Y VDD VSS
+X0 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 VDD a_9_21# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X7 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X8 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X10 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X11 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X12 VSS a_9_21# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X13 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X14 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X15 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X16 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X17 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X18 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X19 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X20 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X21 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X22 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X23 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X24 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X25 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X26 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X27 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X28 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X29 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X30 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X31 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X32 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X33 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_16.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_2.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkbuf_2.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkbuf_2 A Y VDD VSS
+X0 VDD a_9_21# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 VSS a_9_21# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X3 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X4 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_2.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_4.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkbuf_4.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkbuf_4 A Y VDD VSS
+X0 VSS a_10_20# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 VDD a_10_20# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 Y a_10_20# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 Y a_10_20# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X4 VSS a_10_20# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 VDD A a_10_20# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X6 Y a_10_20# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 Y a_10_20# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X8 VSS A a_10_20# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X9 VDD a_10_20# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_4.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_8.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkbuf_8.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkbuf_8 A Y VDD VSS
+X0 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X6 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X8 VDD a_9_21# Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD a_9_21# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X10 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X11 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X12 Y a_9_21# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X13 VSS a_9_21# Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X14 VSS a_9_21# Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X15 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X16 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X17 Y a_9_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkbuf_8.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkinv_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkinv_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkinv_1 A Y VDD VSS
+X0 Y A VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 Y A VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkinv_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkinv_16.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkinv_16.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkinv_16 A Y VDD VSS
+X0 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X8 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X9 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X10 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X11 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X12 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X13 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X14 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X15 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X16 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X17 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X18 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X19 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X20 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X21 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X22 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X23 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X24 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X25 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X26 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X27 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X28 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X29 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X30 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X31 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkinv_16.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkinv_2.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkinv_2.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkinv_2 A Y VDD VSS
+X0 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkinv_2.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkinv_4.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkinv_4.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkinv_4 A Y VDD VSS
+X0 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X3 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X4 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkinv_4.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__clkinv_8.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkinv_8.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__clkinv_8 A Y VDD VSS
+X0 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X6 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X8 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X10 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X11 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X12 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X13 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X14 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X15 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__clkinv_8.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__decap_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__decap_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__decap_1 VDD VSS
+X0 VDD a_19_16# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=1.7p ps=8.8u w=1.7u l=0.3u
+X1 VSS a_19_16# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.85p ps=5.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__decap_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__dff_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__dff_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__dff_1 D CLK Q QN VDD VSS
+X0 a_86_21# a_53_40# a_19_16# VSS nfet_03v3 ad=75f pd=0.85u as=0.343p ps=1.7u w=0.6u l=0.3u
+X1 VSS a_161_44# a_148_21# VSS nfet_03v3 ad=0.215p pd=1.4u as=0.225p ps=1.35u w=0.6u l=0.3u
+X2 a_19_16# CLK a_42_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.638p ps=2.45u w=1.7u l=0.3u
+X3 VDD a_161_44# QN VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 VSS a_9_21# a_86_21# VSS nfet_03v3 ad=0.215p pd=1.4u as=75f ps=0.85u w=0.6u l=0.3u
+X5 a_19_16# a_53_40# a_42_21# VSS nfet_03v3 ad=0.343p pd=1.7u as=0.318p ps=1.6u w=0.85u l=0.3u
+X6 VSS a_161_44# QN VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X7 VDD a_19_16# a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X8 a_53_40# CLK VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VSS a_19_16# a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X10 a_53_40# CLK VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.215p ps=1.4u w=0.85u l=0.3u
+X11 Q QN VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X12 a_148_72# a_53_40# a_125_21# VDD pfet_03v3 ad=0.638p pd=2.45u as=0.723p ps=2.55u w=1.7u l=0.3u
+X13 a_114_72# a_9_21# VDD VDD pfet_03v3 ad=0.213p pd=1.95u as=0.468p ps=2.25u w=1.7u l=0.3u
+X14 a_161_44# a_125_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X15 a_148_21# CLK a_125_21# VSS nfet_03v3 ad=0.225p pd=1.35u as=0.343p ps=1.7u w=0.6u l=0.3u
+X16 Q QN VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X17 a_42_72# D VDD VDD pfet_03v3 ad=0.638p pd=2.45u as=0.468p ps=2.25u w=1.7u l=0.3u
+X18 a_125_21# a_53_40# a_114_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.213p ps=1.95u w=1.7u l=0.3u
+X19 a_114_21# a_9_21# VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.215p ps=1.4u w=0.85u l=0.3u
+X20 a_161_44# a_125_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+X21 a_86_72# CLK a_19_16# VDD pfet_03v3 ad=0.213p pd=1.95u as=0.723p ps=2.55u w=1.7u l=0.3u
+X22 VDD a_161_44# a_148_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.638p ps=2.45u w=1.7u l=0.3u
+X23 a_42_21# D VSS VSS nfet_03v3 ad=0.318p pd=1.6u as=0.233p ps=1.4u w=0.85u l=0.3u
+X24 a_125_21# CLK a_114_21# VSS nfet_03v3 ad=0.343p pd=1.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+X25 VDD a_9_21# a_86_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.213p ps=1.95u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__dff_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__dffn_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__dffn_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__dffn_1 D CLK Q QN VDD VSS
+X0 a_86_21# a_53_40# a_19_16# VSS nfet_03v3 ad=75f pd=0.85u as=0.343p ps=1.7u w=0.6u l=0.3u
+X1 VSS a_161_44# a_148_21# VSS nfet_03v3 ad=0.215p pd=1.4u as=0.225p ps=1.35u w=0.6u l=0.3u
+X2 Q QN VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X3 a_19_16# a_50_61# a_42_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.638p ps=2.45u w=1.7u l=0.3u
+X4 a_161_44# a_125_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 VSS a_9_21# a_86_21# VSS nfet_03v3 ad=0.215p pd=1.4u as=75f ps=0.85u w=0.6u l=0.3u
+X6 a_19_16# a_53_40# a_42_21# VSS nfet_03v3 ad=0.343p pd=1.7u as=0.318p ps=1.6u w=0.85u l=0.3u
+X7 VDD a_19_16# a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X8 a_53_40# a_50_61# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD a_161_44# QN VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X10 VSS a_19_16# a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X11 VDD CLK a_50_61# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X12 a_53_40# a_50_61# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.215p ps=1.4u w=0.85u l=0.3u
+X13 a_148_72# a_53_40# a_125_21# VDD pfet_03v3 ad=0.638p pd=2.45u as=0.723p ps=2.55u w=1.7u l=0.3u
+X14 VSS a_161_44# QN VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X15 a_114_72# a_9_21# VDD VDD pfet_03v3 ad=0.213p pd=1.95u as=0.468p ps=2.25u w=1.7u l=0.3u
+X16 VSS CLK a_50_61# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X17 a_148_21# a_50_61# a_125_21# VSS nfet_03v3 ad=0.225p pd=1.35u as=0.343p ps=1.7u w=0.6u l=0.3u
+X18 a_42_72# D VDD VDD pfet_03v3 ad=0.638p pd=2.45u as=0.468p ps=2.25u w=1.7u l=0.3u
+X19 a_125_21# a_53_40# a_114_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.213p ps=1.95u w=1.7u l=0.3u
+X20 a_114_21# a_9_21# VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.215p ps=1.4u w=0.85u l=0.3u
+X21 a_86_72# a_50_61# a_19_16# VDD pfet_03v3 ad=0.213p pd=1.95u as=0.723p ps=2.55u w=1.7u l=0.3u
+X22 VDD a_161_44# a_148_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.638p ps=2.45u w=1.7u l=0.3u
+X23 Q QN VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X24 a_42_21# D VSS VSS nfet_03v3 ad=0.318p pd=1.6u as=0.233p ps=1.4u w=0.85u l=0.3u
+X25 a_125_21# a_50_61# a_114_21# VSS nfet_03v3 ad=0.343p pd=1.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+X26 a_161_44# a_125_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X27 VDD a_9_21# a_86_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.213p ps=1.95u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__dffn_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__dffsr_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__dffsr_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__dffsr_1 D CLK Q QN S R VDD VSS
+X0 VDD a_247_49# a_234_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.638p ps=2.45u w=1.7u l=0.3u
+X1 VSS a_25_21# a_247_49# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X2 VSS a_41_72# a_172_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.105p ps=1.1u w=0.85u l=0.3u
+X3 Q QN VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X4 a_128_72# D VDD VDD pfet_03v3 ad=0.638p pd=2.45u as=0.85p ps=4.4u w=1.7u l=0.3u
+X5 VDD a_68_40# a_57_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 a_68_40# S VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X7 VSS a_247_49# a_234_21# VSS nfet_03v3 ad=0.215p pd=1.4u as=0.225p ps=1.35u w=0.6u l=0.3u
+X8 a_291_72# a_68_40# VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 Q QN VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X10 a_25_21# R VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X11 a_57_72# a_25_21# a_41_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X12 VDD a_211_21# a_291_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X13 a_41_72# a_25_21# VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X14 a_128_21# D VSS VSS nfet_03v3 ad=0.225p pd=1.35u as=0.388p ps=2.7u w=0.6u l=0.3u
+X15 a_200_72# a_41_72# VDD VDD pfet_03v3 ad=0.213p pd=1.95u as=0.468p ps=2.25u w=1.7u l=0.3u
+X16 a_68_40# S VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+X17 a_310_21# a_211_21# VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.425p ps=2.7u w=0.85u l=0.3u
+X18 a_211_21# a_139_43# a_200_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.213p ps=1.95u w=1.7u l=0.3u
+X19 a_25_21# R VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+X20 a_82_16# CLK a_128_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.638p ps=2.45u w=1.7u l=0.3u
+X21 a_139_43# CLK VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X22 a_200_21# a_41_72# VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.233p ps=1.4u w=0.85u l=0.3u
+X23 a_247_49# a_68_40# a_310_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.105p ps=1.1u w=0.85u l=0.3u
+X24 a_211_21# CLK a_200_21# VSS nfet_03v3 ad=0.343p pd=1.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+X25 a_57_72# a_82_16# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X26 VDD a_247_49# QN VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X27 a_82_16# a_139_43# a_128_21# VSS nfet_03v3 ad=0.343p pd=1.7u as=0.225p ps=1.35u w=0.6u l=0.3u
+X28 a_139_43# CLK VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.215p ps=1.4u w=0.85u l=0.3u
+X29 a_234_72# a_139_43# a_211_21# VDD pfet_03v3 ad=0.638p pd=2.45u as=0.723p ps=2.55u w=1.7u l=0.3u
+X30 a_172_72# CLK a_82_16# VDD pfet_03v3 ad=0.213p pd=1.95u as=0.723p ps=2.55u w=1.7u l=0.3u
+X31 a_247_49# a_25_21# a_291_72# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X32 a_77_21# a_68_40# a_41_72# VSS nfet_03v3 ad=0.105p pd=1.1u as=0.233p ps=1.4u w=0.85u l=0.3u
+X33 VSS a_247_49# QN VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X34 a_234_21# CLK a_211_21# VSS nfet_03v3 ad=0.225p pd=1.35u as=0.343p ps=1.7u w=0.6u l=0.3u
+X35 VDD a_41_72# a_172_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.213p ps=1.95u w=1.7u l=0.3u
+X36 a_172_21# a_139_43# a_82_16# VSS nfet_03v3 ad=0.105p pd=1.1u as=0.343p ps=1.7u w=0.85u l=0.3u
+X37 VSS a_82_16# a_77_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__dffsr_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__dlat_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__dlat_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__dlat_1 D CLK Q VDD VSS
+X0 VSS a_10_21# a_77_21# VSS nfet_03v3 ad=0.298p pd=1.55u as=0.383p ps=1.75u w=0.85u l=0.3u
+X1 a_52_60# CLK VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.298p ps=1.55u w=0.85u l=0.3u
+X2 a_20_16# a_52_60# a_43_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 a_46_21# D VSS VSS nfet_03v3 ad=0.17p pd=1.25u as=0.298p ps=1.55u w=0.85u l=0.3u
+X4 a_20_16# CLK a_46_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.17p ps=1.25u w=0.85u l=0.3u
+X5 VDD a_10_21# a_137_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X6 VSS a_10_21# a_137_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X7 a_77_72# CLK a_20_16# VDD pfet_03v3 ad=0.893p pd=2.75u as=0.468p ps=2.25u w=1.7u l=0.3u
+X8 a_43_72# D VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD a_10_21# a_77_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.893p ps=2.75u w=1.7u l=0.3u
+X10 VDD a_20_16# a_10_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X11 a_77_21# a_52_60# a_20_16# VSS nfet_03v3 ad=0.383p pd=1.75u as=0.233p ps=1.4u w=0.85u l=0.3u
+X12 Q a_137_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X13 a_52_60# CLK VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X14 VSS a_20_16# a_10_21# VSS nfet_03v3 ad=0.298p pd=1.55u as=0.425p ps=2.7u w=0.85u l=0.3u
+X15 Q a_137_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__dlat_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__dlatn_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__dlatn_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__dlatn_1 D CLK Q VDD VSS
+X0 VSS a_10_21# a_77_21# VSS nfet_03v3 ad=0.298p pd=1.55u as=0.383p ps=1.75u w=0.85u l=0.3u
+X1 a_52_60# a_54_16# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.298p ps=1.55u w=0.85u l=0.3u
+X2 a_20_16# a_52_60# a_43_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 VDD a_10_21# a_173_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 a_46_21# D VSS VSS nfet_03v3 ad=0.17p pd=1.25u as=0.298p ps=1.55u w=0.85u l=0.3u
+X5 a_20_16# a_54_16# a_46_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.17p ps=1.25u w=0.85u l=0.3u
+X6 VSS a_10_21# a_173_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X7 a_77_72# a_54_16# a_20_16# VDD pfet_03v3 ad=0.893p pd=2.75u as=0.468p ps=2.25u w=1.7u l=0.3u
+X8 Q a_173_21# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 a_43_72# D VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X10 VDD a_10_21# a_77_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.893p ps=2.75u w=1.7u l=0.3u
+X11 VDD CLK a_54_16# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X12 VDD a_20_16# a_10_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X13 a_77_21# a_52_60# a_20_16# VSS nfet_03v3 ad=0.383p pd=1.75u as=0.233p ps=1.4u w=0.85u l=0.3u
+X14 Q a_173_21# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X15 a_52_60# a_54_16# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X16 VSS CLK a_54_16# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+X17 VSS a_20_16# a_10_21# VSS nfet_03v3 ad=0.298p pd=1.55u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__dlatn_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__fill_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__fill_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__fill_1 VDD VSS
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__fill_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__fill_16.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__fill_16.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__fill_16 VDD VSS
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__fill_16.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__fill_2.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__fill_2.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__fill_2 VDD VSS
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__fill_2.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__fill_4.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__fill_4.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__fill_4 VDD VSS
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__fill_4.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__fill_8.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__fill_8.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__fill_8 VDD VSS
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__fill_8.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__inv_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__inv_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__inv_1 A Y VDD VSS
+X0 Y A VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 Y A VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__inv_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__inv_16.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__inv_16.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__inv_16 A Y VDD VSS
+X0 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X8 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X9 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X10 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X11 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X12 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X13 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X14 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X15 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X16 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X17 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X18 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X19 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X20 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X21 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X22 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X23 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X24 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X25 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X26 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X27 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X28 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X29 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X30 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X31 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__inv_16.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__inv_2.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__inv_2.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__inv_2 A Y VDD VSS
+X0 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__inv_2.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__inv_4.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__inv_4.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__inv_4 A Y VDD VSS
+X0 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X3 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X4 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X6 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__inv_4.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__inv_8.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__inv_8.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__inv_8 A Y VDD VSS
+X0 VDD A Y VDD pfet_03v3 ad=0.935p pd=4.5u as=0.468p ps=2.25u w=1.7u l=0.3u
+X1 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X2 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 VSS A Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X5 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X6 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X7 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X8 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X10 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X11 VDD A Y VDD pfet_03v3 ad=0.468p pd=2.25u as=0.468p ps=2.25u w=1.7u l=0.3u
+X12 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X13 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X14 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X15 VSS A Y VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__inv_8.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__mux2_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__mux2_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__mux2_1 A B Sel Y VDD VSS
+X0 Y Sel A VDD pfet_03v3 ad=0.595p pd=2.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 a_25_21# Sel VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 Y a_25_21# A VSS nfet_03v3 ad=0.298p pd=1.55u as=0.425p ps=2.7u w=0.85u l=0.3u
+X3 a_25_21# Sel VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+X4 B a_25_21# Y VDD pfet_03v3 ad=1.11p pd=4.7u as=0.595p ps=2.4u w=1.7u l=0.3u
+X5 B Sel Y VSS nfet_03v3 ad=0.553p pd=3u as=0.298p ps=1.55u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__mux2_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__nand2_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__nand2_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__nand2_1 A B Y VDD VSS
+X0 VSS B a_28_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+X1 Y A VDD VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 VDD B Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 a_28_21# A Y VSS nfet_03v3 ad=0.105p pd=1.1u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__nand2_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__nor2_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__nor2_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__nor2_1 A B Y VDD VSS
+X0 Y A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X1 a_28_72# A VDD VDD pfet_03v3 ad=0.213p pd=1.95u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 Y B a_28_72# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.213p ps=1.95u w=1.7u l=0.3u
+X3 VSS B Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__nor2_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__oai21_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__oai21_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__oai21_1 A0 A1 B Y VDD VSS
+X0 VDD B Y VDD pfet_03v3 ad=0.868p pd=4.5u as=0.553p ps=2.35u w=1.7u l=0.3u
+X1 Y B a_8_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.275p ps=1.5u w=0.85u l=0.3u
+X2 VSS A0 a_8_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X3 a_27_72# A0 VDD VDD pfet_03v3 ad=0.255p pd=2u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 Y A1 a_27_72# VDD pfet_03v3 ad=0.553p pd=2.35u as=0.255p ps=2u w=1.7u l=0.3u
+X5 a_8_21# A1 VSS VSS nfet_03v3 ad=0.275p pd=1.5u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__oai21_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__oai22_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__oai22_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__oai22_1 A0 A1 B0 B1 Y VDD VSS
+X0 a_58_72# B0 Y VDD pfet_03v3 ad=0.213p pd=1.95u as=0.553p ps=2.35u w=1.7u l=0.3u
+X1 Y B0 a_8_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.275p ps=1.5u w=0.85u l=0.3u
+X2 VDD B1 a_58_72# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.213p ps=1.95u w=1.7u l=0.3u
+X3 VSS A0 a_8_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X4 a_27_72# A0 VDD VDD pfet_03v3 ad=0.255p pd=2u as=0.85p ps=4.4u w=1.7u l=0.3u
+X5 a_8_21# B1 Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X6 Y A1 a_27_72# VDD pfet_03v3 ad=0.553p pd=2.35u as=0.255p ps=2u w=1.7u l=0.3u
+X7 a_8_21# A1 VSS VSS nfet_03v3 ad=0.275p pd=1.5u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__oai22_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__oai31_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__oai31_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__oai31_1 A0 A1 A2 B Y VDD VSS
+X0 Y A1 a_45_72# VDD pfet_03v3 ad=0.553p pd=2.35u as=0.255p ps=2u w=1.7u l=0.3u
+X1 a_25_21# A1 VSS VSS nfet_03v3 ad=0.275p pd=1.5u as=0.233p ps=1.4u w=0.85u l=0.3u
+X2 a_25_21# A2 VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X3 a_34_72# A2 VDD VDD pfet_03v3 ad=0.213p pd=1.95u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 a_45_72# A0 a_34_72# VDD pfet_03v3 ad=0.255p pd=2u as=0.213p ps=1.95u w=1.7u l=0.3u
+X5 VDD B Y VDD pfet_03v3 ad=0.868p pd=4.5u as=0.553p ps=2.35u w=1.7u l=0.3u
+X6 Y B a_25_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.275p ps=1.5u w=0.85u l=0.3u
+X7 VSS A0 a_25_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__oai31_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__or2_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__or2_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__or2_1 A B Y VDD VSS
+X0 VSS B a_9_72# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.233p ps=1.4u w=0.85u l=0.3u
+X1 a_25_72# A a_9_72# VDD pfet_03v3 ad=0.213p pd=1.95u as=0.85p ps=4.4u w=1.7u l=0.3u
+X2 Y a_9_72# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.595p ps=2.4u w=1.7u l=0.3u
+X3 Y a_9_72# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X4 a_9_72# A VSS VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X5 VDD B a_25_72# VDD pfet_03v3 ad=0.595p pd=2.4u as=0.213p ps=1.95u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__or2_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__tbuf_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__tbuf_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__tbuf_1 A EN Y VDD VSS
+X0 VDD A a_9_21# VDD pfet_03v3 ad=0.553p pd=2.35u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 VSS A a_9_21# VSS nfet_03v3 ad=0.275p pd=1.5u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 a_44_72# a_9_21# VDD VDD pfet_03v3 ad=0.213p pd=1.95u as=0.553p ps=2.35u w=1.7u l=0.3u
+X3 Y a_49_58# a_44_72# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.213p ps=1.95u w=1.7u l=0.3u
+X4 a_49_58# EN VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X5 a_44_21# a_9_21# VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.275p ps=1.5u w=0.85u l=0.3u
+X6 Y EN a_44_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+X7 a_49_58# EN VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__tbuf_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__tieh.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__tieh.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__tieh Y VDD VSS
+X0 Y a_19_16# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 a_19_16# a_19_16# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__tieh.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__tiel.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__tiel.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__tiel Y VDD VSS
+X0 a_19_16# a_19_16# VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 Y a_19_16# VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__tiel.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__tinv_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__tinv_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__tinv_1 A EN Y VDD VSS
+X0 VDD EN a_9_21# VDD pfet_03v3 ad=0.553p pd=2.35u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 VSS EN a_9_21# VSS nfet_03v3 ad=0.275p pd=1.5u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 a_44_72# A VDD VDD pfet_03v3 ad=0.213p pd=1.95u as=0.553p ps=2.35u w=1.7u l=0.3u
+X3 Y a_9_21# a_44_72# VDD pfet_03v3 ad=0.85p pd=4.4u as=0.213p ps=1.95u w=1.7u l=0.3u
+X4 a_44_21# A VSS VSS nfet_03v3 ad=0.105p pd=1.1u as=0.275p ps=1.5u w=0.85u l=0.3u
+X5 Y EN a_44_21# VSS nfet_03v3 ad=0.425p pd=2.7u as=0.105p ps=1.1u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__tinv_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__xnor2_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__xnor2_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__xnor2_1 A B Y VDD VSS
+X0 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X1 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 a_78_72# A Y VDD pfet_03v3 ad=0.298p pd=2.05u as=0.723p ps=2.55u w=1.7u l=0.3u
+X3 VDD B a_78_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.298p ps=2.05u w=1.7u l=0.3u
+X4 a_42_72# a_9_21# VDD VDD pfet_03v3 ad=0.298p pd=2.05u as=0.468p ps=2.25u w=1.7u l=0.3u
+X5 a_78_21# a_9_21# Y VSS nfet_03v3 ad=0.147p pd=1.2u as=0.373p ps=1.75u w=0.85u l=0.3u
+X6 Y a_49_16# a_42_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.298p ps=2.05u w=1.7u l=0.3u
+X7 a_49_16# B VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X8 VSS B a_78_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.147p ps=1.2u w=0.85u l=0.3u
+X9 a_42_21# A VSS VSS nfet_03v3 ad=0.147p pd=1.2u as=0.233p ps=1.4u w=0.85u l=0.3u
+X10 Y a_49_16# a_42_21# VSS nfet_03v3 ad=0.373p pd=1.75u as=0.147p ps=1.2u w=0.85u l=0.3u
+X11 a_49_16# B VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__xnor2_1.spice
+****BOF - gf180mcu_osu_sc_gp9t3v3__xor2_1.spice
+
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__xor2_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp9t3v3__xor2_1 A B Y VDD VSS
+X0 VSS a_52_61# a_81_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.213p ps=1.35u w=0.85u l=0.3u
+X1 Y a_52_61# a_42_72# VDD pfet_03v3 ad=0.723p pd=2.55u as=0.425p ps=2.2u w=1.7u l=0.3u
+X2 VDD A a_9_21# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X3 Y B a_42_21# VSS nfet_03v3 ad=0.36p pd=1.7u as=0.213p ps=1.35u w=0.85u l=0.3u
+X4 VSS A a_9_21# VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X5 a_81_72# a_9_21# Y VDD pfet_03v3 ad=0.425p pd=2.2u as=0.723p ps=2.55u w=1.7u l=0.3u
+X6 a_52_61# B VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X7 a_81_21# a_9_21# Y VSS nfet_03v3 ad=0.213p pd=1.35u as=0.36p ps=1.7u w=0.85u l=0.3u
+X8 a_42_72# A VDD VDD pfet_03v3 ad=0.425p pd=2.2u as=0.468p ps=2.25u w=1.7u l=0.3u
+X9 a_52_61# B VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+X10 a_42_21# A VSS VSS nfet_03v3 ad=0.213p pd=1.35u as=0.233p ps=1.4u w=0.85u l=0.3u
+X11 VDD B a_81_72# VDD pfet_03v3 ad=0.468p pd=2.25u as=0.425p ps=2.2u w=1.7u l=0.3u
+.ends
+
+
+
+****EOF - gf180mcu_osu_sc_gp9t3v3__xor2_1.spice
