@@ -29,7 +29,7 @@ license text can be found in the `LICENSE <LICENSE>`_ file.
 
 ::
 
-   Copyright 2022  Board of Regents for the Oklahoma Agricultural and Mechanical Colleges
+   Copyright 2025  Board of Regents for the Oklahoma Agricultural and Mechanical Colleges
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
