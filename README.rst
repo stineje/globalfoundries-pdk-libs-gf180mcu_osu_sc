@@ -20,7 +20,6 @@ Thanks to the following for help, guidance and support!
 
 -  Tim ‘mithro’ Ansell <tansell@google.com> (Google)
 -  Tim Edwards <tim@efabless.com> (eFabless)
--  Mohamed Kassem <mkk@efabless.com> (eFabless)
 
 License
 =======
