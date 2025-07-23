@@ -1,0 +1,35 @@
+settings:
+    lib_name: gf180mcu_osu_sc_gp9t3v3_tt
+    results_dir: lib
+    named_nodes:
+        vss:
+            name: VSS
+            voltage: 0
+    cell_defaults:
+        models: # Download from corresponding links & place in the correct locations, or point to your clone of gf180mcu_fd_pr
+            - ../models/sm141064.ngspice typical # https://raw.githubusercontent.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pr/refs/heads/main/models/ngspice/sm141064.ngspice
+            - ../models/design.ngspice           # https://raw.githubusercontent.com/fossi-foundation/globalfoundries-pdk-libs-gf180mcu_fd_pr/refs/heads/main/models/ngspice/design.ngspice
+        netlist: spice/gf180mcu_osu_sc_gp9t3v3.spice
+        slews: [0.01, 0.05, 0.1]
+        loads: [0.05, 0.1, 0.3]
+cells:
+    gf180mcu_osu_sc_gp9t3v3__addf_1:
+        inputs: [A, B, CI]
+        outputs: [S, CO]
+        functions:
+            - S=A^B^CI
+            - CO=A&B | CI&(A^B)
+    gf180mcu_osu_sc_gp9t3v3__addh_1:
+        inputs: [A, B]
+        outputs: [S, CO]
+        functions:
+            - S=A^B
+            - CO=A&B
+    gf180mcu_osu_sc_gp9t3v3__and2_1:
+        inputs: [A, B]
+        outputs: ['Y']
+        functions: [Y=A&B]
+    gf180mcu_osu_sc_gp9t3v3__aoi21_1:
+        inputs: [A0, A1, B]
+        outputs: ['Y']
+        functions: [Y=(!A0&!B) | (!A1&!B)]
