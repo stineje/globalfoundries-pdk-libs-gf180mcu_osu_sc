@@ -1,5 +1,5 @@
 settings:
-    lib_name: gf180mcu_osu_sc_gp9t3v3_tt
+    lib_name: gf180mcu_osu_sc_gp9t3v3_tt_25c.nldm
     results_dir: lib
     omit_on_failure: true
     named_nodes:
