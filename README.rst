@@ -19,7 +19,7 @@ VLSI Computer Architecture Research Group
 Thanks to the following for help, guidance and support!
 
 -  Tim ‘mithro’ Ansell <me@mith.ro> (Engineer and Open-Source Enthusiast Extraordinaire)
--  Tim Edwards <tim@opencircuitdesign.com> (Open Circuit Design)
+-  Tim Edwards <tim@opencircuitdesign.com> (Open Circuit Design and Super EDA Expert)
 
 License
 =======
