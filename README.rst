@@ -18,7 +18,7 @@ VLSI Computer Architecture Research Group
 
 Thanks to the following for help, guidance and support!
 
--  Tim ‘mithro’ Ansell <me@mith.ro> (Engineer Extraordinaire)
+-  Tim ‘mithro’ Ansell <me@mith.ro> (Engineer and Open-Source Enthusiast Extraordinaire)
 -  Tim Edwards <tim@efabless.com> (eFabless)
 
 License
