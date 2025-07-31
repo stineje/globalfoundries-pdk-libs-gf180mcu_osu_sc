@@ -15,6 +15,7 @@ VLSI Computer Architecture Research Group
 -  Landon Burleson  
 -  Brett Mathis
 -  Teo Ene
+-  Marcus Mellor
 
 Thanks to the following for help, guidance and support!
 
