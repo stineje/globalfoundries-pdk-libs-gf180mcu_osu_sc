@@ -1,0 +1,27 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__addh_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3__addh_ 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (7)                              |pfet_03v3 (7)                              
+nfet_03v3 (7)                              |nfet_03v3 (7)                              
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__addh_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3__addh_ 
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+CO                                         |CO                                         
+S                                          |S                                          
+A                                          |A                                          
+B                                          |B                                          
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_osu_sc_gp12t3v3__addh_1 and gf180mcu_osu_sc_gp12t3v3__addh_1 are equivalent.
+Circuits match uniquely.

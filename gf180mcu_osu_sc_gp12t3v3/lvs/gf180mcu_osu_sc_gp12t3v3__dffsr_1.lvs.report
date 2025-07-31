@@ -1,0 +1,42 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__dffsr |Circuit 2: gf180mcu_osu_sc_gp12t3v3__dffsr 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (19)                             |pfet_03v3 (19)                             
+nfet_03v3 (19)                             |nfet_03v3 (19)                             
+Number of devices: 38                      |Number of devices: 38                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+nfet_03v3:37 vs. nfet_03v3:M6:
+ w circuit1: 6e-07   circuit2: 8.5e-07   (delta=34.5%, cutoff=1%)
+nfet_03v3:34 vs. nfet_03v3:M8:
+ w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
+nfet_03v3:16 vs. nfet_03v3:M4:
+ w circuit1: 6e-07   circuit2: 8.5e-07   (delta=34.5%, cutoff=1%)
+nfet_03v3:4 vs. nfet_03v3:M10:
+ w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__dffsr |Circuit 2: gf180mcu_osu_sc_gp12t3v3__dffsr 
+-------------------------------------------|-------------------------------------------
+QN                                         |QN                                         
+CLK                                        |CLK                                        
+D                                          |D                                          
+Q                                          |Q                                          
+R                                          |R                                          
+S                                          |S                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_osu_sc_gp12t3v3__dffsr_1 and gf180mcu_osu_sc_gp12t3v3__dffsr_1 are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors:
+ gf180mcu_osu_sc_gp12t3v3__dffsr_1

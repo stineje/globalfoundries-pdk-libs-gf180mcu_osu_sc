@@ -1,0 +1,26 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Class gf180mcu_osu_sc_gp12t3v3__buf_2 (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__buf_2 |Circuit 2: gf180mcu_osu_sc_gp12t3v3__buf_2 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (3->2)                           |pfet_03v3 (3->2)                           
+nfet_03v3 (3->2)                           |nfet_03v3 (3->2)                           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__buf_2 |Circuit 2: gf180mcu_osu_sc_gp12t3v3__buf_2 
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_osu_sc_gp12t3v3__buf_2 and gf180mcu_osu_sc_gp12t3v3__buf_2 are equivalent.
+Circuits match uniquely.

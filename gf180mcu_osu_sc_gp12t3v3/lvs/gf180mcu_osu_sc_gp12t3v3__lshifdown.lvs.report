@@ -1,0 +1,27 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__lshif |Circuit 2: gf180mcu_osu_sc_gp12t3v3__lshif 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (2)                              |pfet_03v3 (2)                              
+nfet_03v3 (2)                              |nfet_03v3 (2)                              
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__lshif |Circuit 2: gf180mcu_osu_sc_gp12t3v3__lshif 
+-------------------------------------------|-------------------------------------------
+A                                          |(no matching pin)                          
+VDDH                                       |VDDH                                       
+Y                                          |(no matching pin)                          
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+A                                          |(no matching pin)                          
+Y                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for gf180mcu_osu_sc_gp12t3v3__lshifdown and gf180mcu_osu_sc_gp12t3v3__lshifdown altered to match.
+Cells failed matching, or top level cell failed pin matching.

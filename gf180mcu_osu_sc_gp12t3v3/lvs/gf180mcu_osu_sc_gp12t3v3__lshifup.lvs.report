@@ -1,0 +1,37 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__lshif |Circuit 2: gf180mcu_osu_sc_gp12t3v3__lshif 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (4)                              |pfet_03v3 (4)                              
+nfet_03v3 (4)                              |nfet_03v3 (4)                              
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+pfet_03v3:4 vs. pfet_03v3:M3:
+ w circuit1: 1.7e-06   circuit2: 8.5e-07   (delta=66.7%, cutoff=1%)
+pfet_03v3:5 vs. pfet_03v3:M4:
+ w circuit1: 1.7e-06   circuit2: 8.5e-07   (delta=66.7%, cutoff=1%)
+pfet_03v3:2 vs. pfet_03v3:M7:
+ w circuit1: 1.7e-06   circuit2: 8.5e-07   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__lshif |Circuit 2: gf180mcu_osu_sc_gp12t3v3__lshif 
+-------------------------------------------|-------------------------------------------
+VDDH                                       |VDDH                                       
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+Y                                          |(no matching pin)                          
+A                                          |(no matching pin)                          
+A                                          |(no matching pin)                          
+Y                                          |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for gf180mcu_osu_sc_gp12t3v3__lshifup and gf180mcu_osu_sc_gp12t3v3__lshifup altered to match.
+Cells failed matching, or top level cell failed pin matching.
+The following cells had property errors:
+ gf180mcu_osu_sc_gp12t3v3__lshifup

@@ -1,0 +1,27 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__oai31 |Circuit 2: gf180mcu_osu_sc_gp12t3v3__oai31 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (4)                              |pfet_03v3 (4)                              
+nfet_03v3 (4)                              |nfet_03v3 (4)                              
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp12t3v3__oai31 |Circuit 2: gf180mcu_osu_sc_gp12t3v3__oai31 
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+A0                                         |A2 **Mismatch**                            
+A1                                         |A0 **Mismatch**                            
+B                                          |B                                          
+A2                                         |A1 **Mismatch**                            
+---------------------------------------------------------------------------------------
+Cell pin lists for gf180mcu_osu_sc_gp12t3v3__oai31_1 and gf180mcu_osu_sc_gp12t3v3__oai31_1 altered to match.
+Cells failed matching, or top level cell failed pin matching.
