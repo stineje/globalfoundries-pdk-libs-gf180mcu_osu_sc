@@ -674,7 +674,7 @@ rlabel metal2 35 62 35 62 1 B
 port 2 n
 rlabel metal2 56 49 56 49 1 CI
 port 3 n
-rlabel metal2 236 65 236 65 1 S
+rlabel metal2 236 65 236 65 1 SUM
 port 4 n
 rlabel metal2 270 65 270 65 1 CO
 port 5 n

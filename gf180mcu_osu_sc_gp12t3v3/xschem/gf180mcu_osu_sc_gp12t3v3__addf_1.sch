@@ -92,7 +92,7 @@ N 800 -270 880 -270 { lab=#net3}
 N 950 -280 1310 -280 { lab=#net6}
 N 1490 -190 1490 -170 { lab=VSS}
 N 1490 -200 1490 -190 { lab=VSS}
-N 1490 -290 1490 -260 { lab=S}
+N 1490 -290 1490 -260 { lab=SUM}
 N 1410 -320 1450 -320 { lab=#net6}
 N 1410 -320 1410 -230 { lab=#net6}
 N 1410 -230 1450 -230 { lab=#net6}
@@ -100,7 +100,7 @@ N 1490 -370 1490 -350 { lab=VDD}
 N 1490 -230 1500 -230 { lab=VSS}
 N 1490 -320 1510 -320 { lab=VDD}
 N 1310 -280 1410 -280 { lab=#net6}
-N 1490 -280 1520 -280 { lab=S}
+N 1490 -280 1520 -280 { lab=SUM}
 N 670 -130 700 -130 {lab=CO}
 C {vdd.sym} 120 -480 0 0 {name=l1 lab=VDD}
 C {vdd.sym} 260 -480 0 0 {name=l2 lab=VDD}
@@ -210,7 +210,7 @@ C {lab_wire.sym} 1510 -320 2 0 {name=l65 sig_type=std_logic lab=VDD}
 C {ipin.sym} 60 -420 0 0 {name=p1 lab=A}
 C {ipin.sym} 210 -420 0 0 {name=p2 lab=B}
 C {ipin.sym} 140 -320 0 0 {name=p3 lab=CI}
-C {opin.sym} 1520 -280 0 0 {name=p4 lab=S}
+C {opin.sym} 1520 -280 0 0 {name=p4 lab=SUM}
 C {opin.sym} 700 -130 0 0 {name=p5 lab=CO}
 C {ipin.sym} -30 -60 0 0 {name=p6 lab=VDD}
 C {ipin.sym} -30 -30 0 0 {name=p7 lab=VSS}

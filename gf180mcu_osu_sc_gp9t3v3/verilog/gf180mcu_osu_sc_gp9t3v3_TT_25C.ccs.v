@@ -1,10 +1,10 @@
-// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs created by Liberate 23.1.1.221.isr1 on Wed Jul 23 07:56:08 2025 for SDF version 2.1
+// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs created by Liberate 23.1.1.221.isr1 on Fri Aug  8 13:07:14 2025 for SDF version 2.1
 
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__addf_1 (CO, S, A, B, CI);
-	output CO, S;
+module gf180mcu_osu_sc_gp9t3v3__addf_1 (CO, SUM, A, B, CI);
+	output CO, SUM;
 	input A, B, CI;
 
 	// Function
@@ -24,7 +24,7 @@ module gf180mcu_osu_sc_gp9t3v3__addf_1 (CO, S, A, B, CI);
 	and (int_fwire_4, A__bar, B, CI__bar);
 	and (int_fwire_5, A, B__bar, CI__bar);
 	and (int_fwire_6, A, B, CI);
-	or (S, int_fwire_6, int_fwire_5, int_fwire_4, int_fwire_3);
+	or (SUM, int_fwire_6, int_fwire_5, int_fwire_4, int_fwire_3);
 
 	// Timing
 	specify
@@ -44,32 +44,32 @@ module gf180mcu_osu_sc_gp9t3v3__addf_1 (CO, S, A, B, CI);
 			(CI => CO) = 0;
 		ifnone (CI => CO) = 0;
 		if ((B & CI))
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if ((~B & ~CI))
-			(A => S) = 0;
-		ifnone (A => S) = 0;
+			(A => SUM) = 0;
+		ifnone (A => SUM) = 0;
 		if ((B & ~CI))
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if ((~B & CI))
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if ((A & CI))
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if ((~A & ~CI))
-			(B => S) = 0;
-		ifnone (B => S) = 0;
+			(B => SUM) = 0;
+		ifnone (B => SUM) = 0;
 		if ((A & ~CI))
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if ((~A & CI))
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if ((A & B))
-			(CI => S) = 0;
+			(CI => SUM) = 0;
 		if ((~A & ~B))
-			(CI => S) = 0;
-		ifnone (CI => S) = 0;
+			(CI => SUM) = 0;
+		ifnone (CI => SUM) = 0;
 		if ((A & ~B))
-			(CI => S) = 0;
+			(CI => SUM) = 0;
 		if ((~A & B))
-			(CI => S) = 0;
+			(CI => SUM) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -77,8 +77,8 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__addh_1 (CO, S, A, B);
-	output CO, S;
+module gf180mcu_osu_sc_gp9t3v3__addh_1 (CO, SUM, A, B);
+	output CO, SUM;
 	input A, B;
 
 	// Function
@@ -90,20 +90,20 @@ module gf180mcu_osu_sc_gp9t3v3__addh_1 (CO, S, A, B);
 	and (int_fwire_0, A__bar, B);
 	not (B__bar, B);
 	and (int_fwire_1, A, B__bar);
-	or (S, int_fwire_1, int_fwire_0);
+	or (SUM, int_fwire_1, int_fwire_0);
 
 	// Timing
 	specify
 		(A => CO) = 0;
 		(B => CO) = 0;
 		if (~B)
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if (B)
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if (~A)
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if (A)
-			(B => S) = 0;
+			(B => SUM) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -508,6 +508,167 @@ module gf180mcu_osu_sc_gp9t3v3__dff_1 (Q, QN, D, CLK);
 		$width (negedge CLK &&& D, 0, 0, notifier);
 		$width (posedge CLK &&& ~D, 0, 0, notifier);
 		$width (negedge CLK &&& ~D, 0, 0, notifier);
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_gp9t3v3__dffn_1 (Q, QN, D, CLK);
+	output Q, QN;
+	input D, CLK;
+	reg notifier;
+	wire delayed_D, delayed_CLK;
+
+	// Function
+	wire int_fwire_clk, int_fwire_IQ, int_fwire_IQN;
+	wire xcr_0;
+
+	not (int_fwire_clk, delayed_CLK);
+	altos_dff_err (xcr_0, int_fwire_clk, delayed_D);
+	altos_dff (int_fwire_IQ, notifier, int_fwire_clk, delayed_D, xcr_0);
+	buf (Q, int_fwire_IQ);
+	not (int_fwire_IQN, int_fwire_IQ);
+	buf (QN, int_fwire_IQN);
+
+	// Timing
+	specify
+		(negedge CLK => (Q+:D)) = 0;
+		(negedge CLK => (QN-:D)) = 0;
+		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$width (posedge CLK &&& D, 0, 0, notifier);
+		$width (negedge CLK &&& D, 0, 0, notifier);
+		$width (posedge CLK &&& ~D, 0, 0, notifier);
+		$width (negedge CLK &&& ~D, 0, 0, notifier);
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_gp9t3v3__dffsr_1 (Q, QN, D, R, S, CLK);
+	output Q, QN;
+	input D, R, S, CLK;
+	reg notifier;
+	wire delayed_D, delayed_R, delayed_S, delayed_CLK;
+
+	// Function
+	wire int_fwire_IQ, int_fwire_IQN, int_fwire_r;
+	wire int_fwire_s, xcr_0;
+
+	not (int_fwire_s, delayed_S);
+	not (int_fwire_r, delayed_R);
+	altos_dff_sr_err (xcr_0, delayed_CLK, delayed_D, int_fwire_s, int_fwire_r);
+	altos_dff_sr_0 (int_fwire_IQ, notifier, delayed_CLK, delayed_D, int_fwire_s, int_fwire_r, xcr_0);
+	buf (Q, int_fwire_IQ);
+	not (int_fwire_IQN, int_fwire_IQ);
+	buf (QN, int_fwire_IQN);
+
+	// Timing
+
+	// Additional timing wires
+	wire adacond0, adacond1, adacond2;
+	wire adacond3, adacond4, adacond5;
+	wire adacond6, adacond7, adacond8;
+	wire CLK__bar, D__bar;
+
+
+	// Additional timing gates
+	and (adacond0, R, S);
+	and (adacond1, D, S);
+	and (adacond2, CLK, S);
+	not (CLK__bar, CLK);
+	and (adacond3, CLK__bar, S);
+	not (D__bar, D);
+	and (adacond4, D__bar, R);
+	and (adacond5, CLK, R);
+	and (adacond6, CLK__bar, R);
+	and (adacond7, D, R, S);
+	and (adacond8, D__bar, R, S);
+
+	specify
+		if ((CLK & S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((CLK & ~S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & D & S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & D & ~S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & ~D & S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & ~D & ~S))
+			(negedge R => (Q+:1'b0)) = 0;
+		ifnone (negedge R => (Q+:1'b0)) = 0;
+		if ((CLK & ~S))
+			(posedge R => (Q+:1'b1)) = 0;
+		if ((~CLK & D & ~S))
+			(posedge R => (Q+:1'b1)) = 0;
+		if ((~CLK & ~D & ~S))
+			(posedge R => (Q+:1'b1)) = 0;
+		ifnone (posedge R => (Q+:1'b1)) = 0;
+		if ((CLK & R))
+			(negedge S => (Q+:1'b1)) = 0;
+		if ((~CLK & D & R))
+			(negedge S => (Q+:1'b1)) = 0;
+		if ((~CLK & ~D & R))
+			(negedge S => (Q+:1'b1)) = 0;
+		ifnone (negedge S => (Q+:1'b1)) = 0;
+		(posedge CLK => (Q+:D)) = 0;
+		if ((CLK & ~S))
+			(posedge R => (QN-:1'b1)) = 0;
+		if ((~CLK & D & ~S))
+			(posedge R => (QN-:1'b1)) = 0;
+		if ((~CLK & ~D & ~S))
+			(posedge R => (QN-:1'b1)) = 0;
+		ifnone (posedge R => (QN-:1'b1)) = 0;
+		if ((CLK & S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((CLK & ~S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & D & S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & D & ~S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & ~D & S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & ~D & ~S))
+			(negedge R => (QN-:1'b0)) = 0;
+		ifnone (negedge R => (QN-:1'b0)) = 0;
+		if ((CLK & R))
+			(negedge S => (QN-:1'b1)) = 0;
+		if ((~CLK & D & R))
+			(negedge S => (QN-:1'b1)) = 0;
+		if ((~CLK & ~D & R))
+			(negedge S => (QN-:1'b1)) = 0;
+		ifnone (negedge S => (QN-:1'b1)) = 0;
+		(posedge CLK => (QN-:D)) = 0;
+		$setuphold (posedge CLK &&& adacond0, posedge D &&& adacond0, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge CLK &&& adacond0, negedge D &&& adacond0, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge S &&& CLK, posedge R &&& CLK, 0, 0, notifier,,, delayed_S, delayed_R);
+		$setuphold (posedge S &&& ~CLK, posedge R &&& ~CLK, 0, 0, notifier,,, delayed_S, delayed_R);
+		$setuphold (posedge S, posedge R, 0, 0, notifier,,, delayed_S, delayed_R);
+		$recovery (posedge R &&& adacond1, posedge CLK &&& adacond1, 0, notifier);
+		$recovery (posedge R, posedge CLK, 0, notifier);
+		$hold (posedge CLK &&& adacond1, posedge R &&& adacond1, 0, notifier);
+		$hold (posedge CLK, posedge R, 0, notifier);
+		$recovery (posedge S &&& adacond4, posedge CLK &&& adacond4, 0, notifier);
+		$recovery (posedge S, posedge CLK, 0, notifier);
+		$hold (posedge CLK &&& adacond4, posedge S &&& adacond4, 0, notifier);
+		$hold (posedge CLK, posedge S, 0, notifier);
+		$width (negedge R &&& adacond2, 0, 0, notifier);
+		$width (negedge R &&& adacond3, 0, 0, notifier);
+		$width (negedge S &&& adacond5, 0, 0, notifier);
+		$width (negedge S &&& adacond6, 0, 0, notifier);
+		$width (posedge CLK &&& adacond7, 0, 0, notifier);
+		$width (negedge CLK &&& adacond7, 0, 0, notifier);
+		$width (posedge CLK &&& adacond8, 0, 0, notifier);
+		$width (negedge CLK &&& adacond8, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine

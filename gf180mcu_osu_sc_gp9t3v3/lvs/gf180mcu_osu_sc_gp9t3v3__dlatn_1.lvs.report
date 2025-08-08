@@ -1,0 +1,39 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp9t3v3__dlatn_ |Circuit 2: gf180mcu_osu_sc_gp9t3v3__dlatn_ 
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (9)                              |nfet_03v3 (9)                              
+pfet_03v3 (9)                              |pfet_03v3 (9)                              
+Number of devices: 18                      |Number of devices: 18                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+nfet_03v3:5 vs. nfet_03v3:M26:
+ w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
+nfet_03v3:4 vs. nfet_03v3:M28:
+ w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
+nfet_03v3:13 vs. nfet_03v3:M32:
+ w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
+nfet_03v3:0 vs. nfet_03v3:M34:
+ w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp9t3v3__dlatn_ |Circuit 2: gf180mcu_osu_sc_gp9t3v3__dlatn_ 
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+Q                                          |Q                                          
+CLK                                        |CLK                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_osu_sc_gp9t3v3__dlatn_1 and gf180mcu_osu_sc_gp9t3v3__dlatn_1 are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors:
+ gf180mcu_osu_sc_gp9t3v3__dlatn_1

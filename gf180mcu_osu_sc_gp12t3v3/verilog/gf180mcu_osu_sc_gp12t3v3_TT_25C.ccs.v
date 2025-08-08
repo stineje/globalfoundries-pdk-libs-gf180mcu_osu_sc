@@ -1,10 +1,10 @@
-// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs created by Liberate 23.1.1.221.isr1 on Thu Jul 31 10:54:23 2025 for SDF version 2.1
+// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs created by Liberate 23.1.1.221.isr1 on Fri Aug  8 13:01:39 2025 for SDF version 2.1
 
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__addf_1 (CO, S, A, B, CI);
-	output CO, S;
+module gf180mcu_osu_sc_gp12t3v3__addf_1 (CO, SUM, A, B, CI);
+	output CO, SUM;
 	input A, B, CI;
 
 	// Function
@@ -24,7 +24,7 @@ module gf180mcu_osu_sc_gp12t3v3__addf_1 (CO, S, A, B, CI);
 	and (int_fwire_4, A__bar, B, CI__bar);
 	and (int_fwire_5, A, B__bar, CI__bar);
 	and (int_fwire_6, A, B, CI);
-	or (S, int_fwire_6, int_fwire_5, int_fwire_4, int_fwire_3);
+	or (SUM, int_fwire_6, int_fwire_5, int_fwire_4, int_fwire_3);
 
 	// Timing
 	specify
@@ -44,32 +44,32 @@ module gf180mcu_osu_sc_gp12t3v3__addf_1 (CO, S, A, B, CI);
 			(CI => CO) = 0;
 		ifnone (CI => CO) = 0;
 		if ((B & CI))
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if ((~B & ~CI))
-			(A => S) = 0;
-		ifnone (A => S) = 0;
+			(A => SUM) = 0;
+		ifnone (A => SUM) = 0;
 		if ((B & ~CI))
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if ((~B & CI))
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if ((A & CI))
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if ((~A & ~CI))
-			(B => S) = 0;
-		ifnone (B => S) = 0;
+			(B => SUM) = 0;
+		ifnone (B => SUM) = 0;
 		if ((A & ~CI))
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if ((~A & CI))
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if ((A & B))
-			(CI => S) = 0;
+			(CI => SUM) = 0;
 		if ((~A & ~B))
-			(CI => S) = 0;
-		ifnone (CI => S) = 0;
+			(CI => SUM) = 0;
+		ifnone (CI => SUM) = 0;
 		if ((A & ~B))
-			(CI => S) = 0;
+			(CI => SUM) = 0;
 		if ((~A & B))
-			(CI => S) = 0;
+			(CI => SUM) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -77,8 +77,8 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__addh_1 (CO, S, A, B);
-	output CO, S;
+module gf180mcu_osu_sc_gp12t3v3__addh_1 (CO, SUM, A, B);
+	output CO, SUM;
 	input A, B;
 
 	// Function
@@ -90,20 +90,20 @@ module gf180mcu_osu_sc_gp12t3v3__addh_1 (CO, S, A, B);
 	and (int_fwire_0, A__bar, B);
 	not (B__bar, B);
 	and (int_fwire_1, A, B__bar);
-	or (S, int_fwire_1, int_fwire_0);
+	or (SUM, int_fwire_1, int_fwire_0);
 
 	// Timing
 	specify
 		(A => CO) = 0;
 		(B => CO) = 0;
 		if (~B)
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if (B)
-			(A => S) = 0;
+			(A => SUM) = 0;
 		if (~A)
-			(B => S) = 0;
+			(B => SUM) = 0;
 		if (A)
-			(B => S) = 0;
+			(B => SUM) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -539,46 +539,126 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__dffsr_1 (Q, QN, S, D, R, CLK);
-	output Q, QN, S;
-	input D, R, CLK;
+module gf180mcu_osu_sc_gp12t3v3__dffsr_1 (Q, QN, D, R, S, CLK);
+	output Q, QN;
+	input D, R, S, CLK;
 	reg notifier;
-	wire delayed_D, delayed_CLK;
-	// Missing function for pin Q
-	// Missing function for pin QN
+	wire delayed_D, delayed_R, delayed_S, delayed_CLK;
 
 	// Function
-	buf (S, 1'b1);
+	wire int_fwire_IQ, int_fwire_IQN, int_fwire_r;
+	wire int_fwire_s, xcr_0;
+
+	not (int_fwire_s, delayed_S);
+	not (int_fwire_r, delayed_R);
+	altos_dff_sr_err (xcr_0, delayed_CLK, delayed_D, int_fwire_s, int_fwire_r);
+	altos_dff_sr_0 (int_fwire_IQ, notifier, delayed_CLK, delayed_D, int_fwire_s, int_fwire_r, xcr_0);
+	buf (Q, int_fwire_IQ);
+	not (int_fwire_IQN, int_fwire_IQ);
+	buf (QN, int_fwire_IQN);
 
 	// Timing
 
 	// Additional timing wires
-	wire adacond0, adacond1, D__bar;
+	wire adacond0, adacond1, adacond2;
+	wire adacond3, adacond4, adacond5;
+	wire adacond6, adacond7, adacond8;
+	wire CLK__bar, D__bar;
 
 
 	// Additional timing gates
-	and (adacond0, D, R);
+	and (adacond0, R, S);
+	and (adacond1, D, S);
+	and (adacond2, CLK, S);
+	not (CLK__bar, CLK);
+	and (adacond3, CLK__bar, S);
 	not (D__bar, D);
-	and (adacond1, D__bar, R);
+	and (adacond4, D__bar, R);
+	and (adacond5, CLK, R);
+	and (adacond6, CLK__bar, R);
+	and (adacond7, D, R, S);
+	and (adacond8, D__bar, R, S);
 
 	specify
-		if (CLK)
-			(R => Q) = 0;
-		if ((~CLK & ~D))
-			(R => Q) = 0;
-		ifnone (R => Q) = 0;
-		(posedge CLK => (Q:CLK)) = 0;
-		if (CLK)
-			(R => QN) = 0;
-		if ((~CLK & ~D))
-			(R => QN) = 0;
-		ifnone (R => QN) = 0;
-		(posedge CLK => (QN:CLK)) = 0;
-		$setuphold (posedge CLK &&& R, posedge D &&& R, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		if ((CLK & S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((CLK & ~S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & D & S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & D & ~S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & ~D & S))
+			(negedge R => (Q+:1'b0)) = 0;
+		if ((~CLK & ~D & ~S))
+			(negedge R => (Q+:1'b0)) = 0;
+		ifnone (negedge R => (Q+:1'b0)) = 0;
+		if ((CLK & ~S))
+			(posedge R => (Q+:1'b1)) = 0;
+		if ((~CLK & D & ~S))
+			(posedge R => (Q+:1'b1)) = 0;
+		if ((~CLK & ~D & ~S))
+			(posedge R => (Q+:1'b1)) = 0;
+		ifnone (posedge R => (Q+:1'b1)) = 0;
+		if ((CLK & R))
+			(negedge S => (Q+:1'b1)) = 0;
+		if ((~CLK & D & R))
+			(negedge S => (Q+:1'b1)) = 0;
+		if ((~CLK & ~D & R))
+			(negedge S => (Q+:1'b1)) = 0;
+		ifnone (negedge S => (Q+:1'b1)) = 0;
+		(posedge CLK => (Q+:D)) = 0;
+		if ((CLK & ~S))
+			(posedge R => (QN-:1'b1)) = 0;
+		if ((~CLK & D & ~S))
+			(posedge R => (QN-:1'b1)) = 0;
+		if ((~CLK & ~D & ~S))
+			(posedge R => (QN-:1'b1)) = 0;
+		ifnone (posedge R => (QN-:1'b1)) = 0;
+		if ((CLK & S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((CLK & ~S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & D & S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & D & ~S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & ~D & S))
+			(negedge R => (QN-:1'b0)) = 0;
+		if ((~CLK & ~D & ~S))
+			(negedge R => (QN-:1'b0)) = 0;
+		ifnone (negedge R => (QN-:1'b0)) = 0;
+		if ((CLK & R))
+			(negedge S => (QN-:1'b1)) = 0;
+		if ((~CLK & D & R))
+			(negedge S => (QN-:1'b1)) = 0;
+		if ((~CLK & ~D & R))
+			(negedge S => (QN-:1'b1)) = 0;
+		ifnone (negedge S => (QN-:1'b1)) = 0;
+		(posedge CLK => (QN-:D)) = 0;
+		$setuphold (posedge CLK &&& adacond0, posedge D &&& adacond0, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge CLK &&& adacond0, negedge D &&& adacond0, 0, 0, notifier,,, delayed_CLK, delayed_D);
 		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
-		$width (posedge CLK &&& adacond0, 0, 0, notifier);
-		$width (negedge CLK &&& adacond0, 0, 0, notifier);
-		$width (posedge CLK &&& adacond1, 0, 0, notifier);
+		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge S &&& CLK, posedge R &&& CLK, 0, 0, notifier,,, delayed_S, delayed_R);
+		$setuphold (posedge S &&& ~CLK, posedge R &&& ~CLK, 0, 0, notifier,,, delayed_S, delayed_R);
+		$setuphold (posedge S, posedge R, 0, 0, notifier,,, delayed_S, delayed_R);
+		$recovery (posedge R &&& adacond1, posedge CLK &&& adacond1, 0, notifier);
+		$recovery (posedge R, posedge CLK, 0, notifier);
+		$hold (posedge CLK &&& adacond1, posedge R &&& adacond1, 0, notifier);
+		$hold (posedge CLK, posedge R, 0, notifier);
+		$recovery (posedge S &&& adacond4, posedge CLK &&& adacond4, 0, notifier);
+		$recovery (posedge S, posedge CLK, 0, notifier);
+		$hold (posedge CLK &&& adacond4, posedge S &&& adacond4, 0, notifier);
+		$hold (posedge CLK, posedge S, 0, notifier);
+		$width (negedge R &&& adacond2, 0, 0, notifier);
+		$width (negedge R &&& adacond3, 0, 0, notifier);
+		$width (negedge S &&& adacond5, 0, 0, notifier);
+		$width (negedge S &&& adacond6, 0, 0, notifier);
+		$width (posedge CLK &&& adacond7, 0, 0, notifier);
+		$width (negedge CLK &&& adacond7, 0, 0, notifier);
+		$width (posedge CLK &&& adacond8, 0, 0, notifier);
+		$width (negedge CLK &&& adacond8, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine
@@ -1064,3 +1144,388 @@ module gf180mcu_osu_sc_gp12t3v3__xor2_1 (Y, A, B);
 	endspecify
 endmodule
 `endcelldefine
+
+
+`ifdef _udp_def_altos_latch_
+`else
+`define _udp_def_altos_latch_
+primitive altos_latch (q, v, clk, d);
+	output q;
+	reg q;
+	input v, clk, d;
+
+	table
+		* ? ? : ? : x;
+		? 1 0 : ? : 0;
+		? 1 1 : ? : 1;
+		? x 0 : 0 : -;
+		? x 1 : 1 : -;
+		? 0 ? : ? : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_err_
+`else
+`define _udp_def_altos_dff_err_
+primitive altos_dff_err (q, clk, d);
+	output q;
+	reg q;
+	input clk, d;
+
+	table
+		(0x) ? : ? : 0;
+		(1x) ? : ? : 1;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_
+`else
+`define _udp_def_altos_dff_
+primitive altos_dff (q, v, clk, d, xcr);
+	output q;
+	reg q;
+	input v, clk, d, xcr;
+
+	table
+		*  ?   ? ? : ? : x;
+		? (x1) 0 0 : ? : 0;
+		? (x1) 1 0 : ? : 1;
+		? (x1) 0 1 : 0 : 0;
+		? (x1) 1 1 : 1 : 1;
+		? (x1) ? x : ? : -;
+		? (bx) 0 ? : 0 : -;
+		? (bx) 1 ? : 1 : -;
+		? (x0) b ? : ? : -;
+		? (x0) ? x : ? : -;
+		? (01) 0 ? : ? : 0;
+		? (01) 1 ? : ? : 1;
+		? (10) ? ? : ? : -;
+		?  b   * ? : ? : -;
+		?  ?   ? * : ? : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_r_err_
+`else
+`define _udp_def_altos_dff_r_err_
+primitive altos_dff_r_err (q, clk, d, r);
+	output q;
+	reg q;
+	input clk, d, r;
+
+	table
+		 ?   0 (0x) : ? : -;
+		 ?   0 (x0) : ? : -;
+		(0x) ?  0   : ? : 0;
+		(0x) 0  x   : ? : 0;
+		(1x) ?  0   : ? : 1;
+		(1x) 0  x   : ? : 1;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_r_
+`else
+`define _udp_def_altos_dff_r_
+primitive altos_dff_r (q, v, clk, d, r, xcr);
+	output q;
+	reg q;
+	input v, clk, d, r, xcr;
+
+	table
+		*  ?   ?  ?   ? : ? : x;
+		?  ?   ?  1   ? : ? : 0;
+		?  b   ? (1?) ? : 0 : -;
+		?  x   0 (1?) ? : 0 : -;
+		?  ?   ? (10) ? : ? : -;
+		?  ?   ? (x0) ? : ? : -;
+		?  ?   ? (0x) ? : 0 : -;
+		? (x1) 0  ?   0 : ? : 0;
+		? (x1) 1  0   0 : ? : 1;
+		? (x1) 0  ?   1 : 0 : 0;
+		? (x1) 1  0   1 : 1 : 1;
+		? (x1) ?  ?   x : ? : -;
+		? (bx) 0  ?   ? : 0 : -;
+		? (bx) 1  0   ? : 1 : -;
+		? (x0) 0  ?   ? : ? : -;
+		? (x0) 1  0   ? : ? : -;
+		? (x0) ?  0   x : ? : -;
+		? (01) 0  ?   ? : ? : 0;
+		? (01) 1  0   ? : ? : 1;
+		? (10) ?  ?   ? : ? : -;
+		?  b   *  ?   ? : ? : -;
+		?  ?   ?  ?   * : ? : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_s_err_
+`else
+`define _udp_def_altos_dff_s_err_
+primitive altos_dff_s_err (q, clk, d, s);
+	output q;
+	reg q;
+	input clk, d, s;
+
+	table
+		 ?   1 (0x) : ? : -;
+		 ?   1 (x0) : ? : -;
+		(0x) ?  0   : ? : 0;
+		(0x) 1  x   : ? : 0;
+		(1x) ?  0   : ? : 1;
+		(1x) 1  x   : ? : 1;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_s_
+`else
+`define _udp_def_altos_dff_s_
+primitive altos_dff_s (q, v, clk, d, s, xcr);
+	output q;
+	reg q;
+	input v, clk, d, s, xcr;
+
+	table
+		*  ?   ?  ?   ? : ? : x;
+		?  ?   ?  1   ? : ? : 1;
+		?  b   ? (1?) ? : 1 : -;
+		?  x   1 (1?) ? : 1 : -;
+		?  ?   ? (10) ? : ? : -;
+		?  ?   ? (x0) ? : ? : -;
+		?  ?   ? (0x) ? : 1 : -;
+		? (x1) 0  0   0 : ? : 0;
+		? (x1) 1  ?   0 : ? : 1;
+		? (x1) 1  ?   1 : 1 : 1;
+		? (x1) 0  0   1 : 0 : 0;
+		? (x1) ?  ?   x : ? : -;
+		? (bx) 1  ?   ? : 1 : -;
+		? (bx) 0  0   ? : 0 : -;
+		? (x0) 1  ?   ? : ? : -;
+		? (x0) 0  0   ? : ? : -;
+		? (x0) ?  0   x : ? : -;
+		? (01) 1  ?   ? : ? : 1;
+		? (01) 0  0   ? : ? : 0;
+		? (10) ?  ?   ? : ? : -;
+		?  b   *  ?   ? : ? : -;
+		?  ?   ?  ?   * : ? : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_sr_err_
+`else
+`define _udp_def_altos_dff_sr_err_
+primitive altos_dff_sr_err (q, clk, d, s, r);
+	output q;
+	reg q;
+	input clk, d, s, r;
+
+	table
+		 ?   1 (0x)  ?   : ? : -;
+		 ?   0  ?   (0x) : ? : -;
+		 ?   0  ?   (x0) : ? : -;
+		(0x) ?  0    0   : ? : 0;
+		(0x) 1  x    0   : ? : 0;
+		(0x) 0  0    x   : ? : 0;
+		(1x) ?  0    0   : ? : 1;
+		(1x) 1  x    0   : ? : 1;
+		(1x) 0  0    x   : ? : 1;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_sr_0
+`else
+`define _udp_def_altos_dff_sr_0
+primitive altos_dff_sr_0 (q, v, clk, d, s, r, xcr);
+	output q;
+	reg q;
+	input v, clk, d, s, r, xcr;
+
+	table
+	//	v,  clk, d, s, r : q' : q;
+
+		*  ?   ?   ?   ?   ? : ? : x;
+		?  ?   ?   ?   1   ? : ? : 0;
+		?  ?   ?   1   0   ? : ? : 1;
+		?  b   ? (1?)  0   ? : 1 : -;
+		?  x   1 (1?)  0   ? : 1 : -;
+		?  ?   ? (10)  0   ? : ? : -;
+		?  ?   ? (x0)  0   ? : ? : -;
+		?  ?   ? (0x)  0   ? : 1 : -;
+		?  b   ?  0   (1?) ? : 0 : -;
+		?  x   0  0   (1?) ? : 0 : -;
+		?  ?   ?  0   (10) ? : ? : -;
+		?  ?   ?  0   (x0) ? : ? : -;
+		?  ?   ?  0   (0x) ? : 0 : -;
+		? (x1) 0  0    ?   0 : ? : 0;
+		? (x1) 1  ?    0   0 : ? : 1;
+		? (x1) 0  0    ?   1 : 0 : 0;
+		? (x1) 1  ?    0   1 : 1 : 1;
+		? (x1) ?  ?    0   x : ? : -;
+		? (x1) ?  0    ?   x : ? : -;
+		? (1x) 0  0    ?   ? : 0 : -;
+		? (1x) 1  ?    0   ? : 1 : -;
+		? (x0) 0  0    ?   ? : ? : -;
+		? (x0) 1  ?    0   ? : ? : -;
+		? (x0) ?  0    0   x : ? : -;
+		? (0x) 0  0    ?   ? : 0 : -;
+		? (0x) 1  ?    0   ? : 1 : -;
+		? (01) 0  0    ?   ? : ? : 0;
+		? (01) 1  ?    0   ? : ? : 1;
+		? (10) ?  0    ?   ? : ? : -;
+		? (10) ?  ?    0   ? : ? : -;
+		?  b   *  0    ?   ? : ? : -;
+		?  b   *  ?    0   ? : ? : -;
+		?  ?   ?  ?    ?   * : ? : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_dff_sr_1
+`else
+`define _udp_def_altos_dff_sr_1
+primitive altos_dff_sr_1 (q, v, clk, d, s, r, xcr);
+	output q;
+	reg q;
+	input v, clk, d, s, r, xcr;
+
+	table
+	//	v,  clk, d, s, r : q' : q;
+
+		*  ?   ?   ?   ?   ? : ? : x;
+		?  ?   ?   0   1   ? : ? : 0;
+		?  ?   ?   1   ?   ? : ? : 1;
+		?  b   ? (1?)  0   ? : 1 : -;
+		?  x   1 (1?)  0   ? : 1 : -;
+		?  ?   ? (10)  0   ? : ? : -;
+		?  ?   ? (x0)  0   ? : ? : -;
+		?  ?   ? (0x)  0   ? : 1 : -;
+		?  b   ?  0   (1?) ? : 0 : -;
+		?  x   0  0   (1?) ? : 0 : -;
+		?  ?   ?  0   (10) ? : ? : -;
+		?  ?   ?  0   (x0) ? : ? : -;
+		?  ?   ?  0   (0x) ? : 0 : -;
+		? (x1) 0  0    ?   0 : ? : 0;
+		? (x1) 1  ?    0   0 : ? : 1;
+		? (x1) 0  0    ?   1 : 0 : 0;
+		? (x1) 1  ?    0   1 : 1 : 1;
+		? (x1) ?  ?    0   x : ? : -;
+		? (x1) ?  0    ?   x : ? : -;
+		? (1x) 0  0    ?   ? : 0 : -;
+		? (1x) 1  ?    0   ? : 1 : -;
+		? (x0) 0  0    ?   ? : ? : -;
+		? (x0) 1  ?    0   ? : ? : -;
+		? (x0) ?  0    0   x : ? : -;
+		? (0x) 0  0    ?   ? : 0 : -;
+		? (0x) 1  ?    0   ? : 1 : -;
+		? (01) 0  0    ?   ? : ? : 0;
+		? (01) 1  ?    0   ? : ? : 1;
+		? (10) ?  0    ?   ? : ? : -;
+		? (10) ?  ?    0   ? : ? : -;
+		?  b   *  0    ?   ? : ? : -;
+		?  b   *  ?    0   ? : ? : -;
+		?  ?   ?  ?    ?   * : ? : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_latch_r_
+`else
+`define _udp_def_altos_latch_r_
+primitive altos_latch_r (q, v, clk, d, r);
+	output q;
+	reg q;
+	input v, clk, d, r;
+
+	table
+		* ? ? ? : ? : x;
+		? ? ? 1 : ? : 0;
+		? 0 ? 0 : ? : -;
+		? 0 ? x : 0 : -;
+		? 1 0 0 : ? : 0;
+		? 1 0 x : ? : 0;
+		? 1 1 0 : ? : 1;
+		? x 0 0 : 0 : -;
+		? x 0 x : 0 : -;
+		? x 1 0 : 1 : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_latch_s_
+`else
+`define _udp_def_altos_latch_s_
+primitive altos_latch_s (q, v, clk, d, s);
+	output q;
+	reg q;
+	input v, clk, d, s;
+
+	table
+		* ? ? ? : ? : x;
+		? ? ? 1 : ? : 1;
+		? 0 ? 0 : ? : -;
+		? 0 ? x : 1 : -;
+		? 1 1 0 : ? : 1;
+		? 1 1 x : ? : 1;
+		? 1 0 0 : ? : 0;
+		? x 1 0 : 1 : -;
+		? x 1 x : 1 : -;
+		? x 0 0 : 0 : -;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_latch_sr_0
+`else
+`define _udp_def_altos_latch_sr_0
+primitive altos_latch_sr_0 (q, v, clk, d, s, r);
+	output q;
+	reg q;
+	input v, clk, d, s, r;
+
+	table
+		* ? ? ? ? : ? : x;
+		? 1 1 ? 0 : ? : 1;
+		? 1 0 0 ? : ? : 0;
+		? ? ? 1 0 : ? : 1;
+		? ? ? ? 1 : ? : 0;
+		? 0 * ? ? : ? : -;
+		? 0 ? * 0 : 1 : 1;
+		? 0 ? 0 * : 0 : 0;
+		? * 1 ? 0 : 1 : 1;
+		? * 0 0 ? : 0 : 0;
+		? ? 1 * 0 : 1 : 1;
+		? ? 0 0 * : 0 : 0;
+	endtable
+endprimitive
+`endif
+
+`ifdef _udp_def_altos_latch_sr_1
+`else
+`define _udp_def_altos_latch_sr_1
+primitive altos_latch_sr_1 (q, v, clk, d, s, r);
+	output q;
+	reg q;
+	input v, clk, d, s, r;
+
+	table
+		* ? ? ? ? : ? : x;
+		? 1 1 ? 0 : ? : 1;
+		? 1 0 0 ? : ? : 0;
+		? ? ? 1 ? : ? : 1;
+		? ? ? 0 1 : ? : 0;
+		? 0 * ? ? : ? : -;
+		? 0 ? * 0 : 1 : 1;
+		? 0 ? 0 * : 0 : 0;
+		? * 1 ? 0 : 1 : 1;
+		? * 0 0 ? : 0 : 0;
+		? ? 1 * 0 : 1 : 1;
+		? ? 0 0 * : 0 : 0;
+	endtable
+endprimitive
+`endif

@@ -17,7 +17,7 @@ Circuit 1: gf180mcu_osu_sc_gp12t3v3__addf_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3_
 -------------------------------------------|-------------------------------------------
 CI                                         |CI                                         
 CO                                         |CO                                         
-S                                          |S                                          
+SUM                                        |SUM                                        
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 A                                          |A                                          

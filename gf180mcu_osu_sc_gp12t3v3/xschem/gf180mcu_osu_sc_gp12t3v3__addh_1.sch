@@ -65,8 +65,8 @@ N 690 -320 690 -270 { lab=#net5}
 N 690 -270 830 -270 { lab=#net5}
 N 830 -290 830 -270 { lab=#net5}
 N 760 -270 760 -210 { lab=#net5}
-N 1030 -230 1090 -230 { lab=S}
-N 1030 -240 1030 -210 { lab=S}
+N 1030 -230 1090 -230 { lab=SUM}
+N 1030 -240 1030 -210 { lab=SUM}
 N 950 -180 990 -180 { lab=#net5}
 N 950 -260 950 -180 { lab=#net5}
 N 950 -270 950 -260 { lab=#net5}
@@ -125,7 +125,7 @@ C {lab_wire.sym} 1050 -270 2 0 {name=l23 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 1050 -180 2 0 {name=l33 sig_type=std_logic lab=VSS}
 C {ipin.sym} 70 -290 0 0 {name=p1 lab=A}
 C {ipin.sym} 220 -290 0 0 {name=p2 lab=B}
-C {opin.sym} 1090 -230 0 0 {name=p3 lab=S}
+C {opin.sym} 1090 -230 0 0 {name=p3 lab=SUM}
 C {opin.sym} 510 -230 0 0 {name=p4 lab=CO}
 C {ipin.sym} -30 -60 0 0 {name=p5 lab=VDD}
 C {ipin.sym} -30 -30 0 0 {name=p6 lab=VSS}

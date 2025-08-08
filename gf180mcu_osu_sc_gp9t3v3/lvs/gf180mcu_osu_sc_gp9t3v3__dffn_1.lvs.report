@@ -1,0 +1,36 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_osu_sc_gp9t3v3__dffn_1 |Circuit 2: gf180mcu_osu_sc_gp9t3v3__dffn_1 
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (14)                             |nfet_03v3 (15->14)                         
+pfet_03v3 (14)                             |pfet_03v3 (15->14)                         
+Number of devices: 28                      |Number of devices: 28                      
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+pfet_03v3:26 vs. pfet_03v3:M21:
+ w circuit1: 1.7e-06   circuit2: 3.4e-06   (delta=66.7%, cutoff=1%)
+nfet_03v3:4 vs. nfet_03v3:M22:
+ w circuit1: 8.5e-07   circuit2: 1.7e-06   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: gf180mcu_osu_sc_gp9t3v3__dffn_1 |Circuit 2: gf180mcu_osu_sc_gp9t3v3__dffn_1 
+-------------------------------------------|-------------------------------------------
+QN                                         |QN                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+CLK                                        |CLK                                        
+D                                          |D                                          
+Q                                          |Q                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_osu_sc_gp9t3v3__dffn_1 and gf180mcu_osu_sc_gp9t3v3__dffn_1 are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors:
+ gf180mcu_osu_sc_gp9t3v3__dffn_1
