@@ -13,234 +13,240 @@
 # limitations under the License.
 magic
 tech gf180mcuC
-timestamp 1677451875
+timestamp 1757176649
 << nwell >>
-rect 0 63 98 127
+rect 0 64 102 126
 << nmos >>
-rect 19 21 25 38
-rect 36 21 42 38
-rect 53 21 59 38
-rect 72 21 78 38
+rect 19 19 25 36
+rect 36 19 42 36
+rect 53 19 59 36
+rect 72 19 78 36
 << pmos >>
-rect 28 72 34 106
-rect 39 72 45 106
-rect 51 72 57 106
-rect 70 72 76 106
+rect 28 73 34 107
+rect 39 73 45 107
+rect 51 73 57 107
+rect 70 73 76 107
 << ndiff >>
-rect 9 36 19 38
-rect 9 23 11 36
-rect 16 23 19 36
-rect 9 21 19 23
-rect 25 36 36 38
-rect 25 23 28 36
-rect 33 23 36 36
-rect 25 21 36 23
-rect 42 28 53 38
-rect 42 23 45 28
-rect 50 23 53 28
-rect 42 21 53 23
-rect 59 36 72 38
-rect 59 23 62 36
-rect 69 23 72 36
-rect 59 21 72 23
-rect 78 36 88 38
-rect 78 23 81 36
-rect 86 23 88 36
-rect 78 21 88 23
+rect 9 34 19 36
+rect 9 21 11 34
+rect 16 21 19 34
+rect 9 19 19 21
+rect 25 34 36 36
+rect 25 21 28 34
+rect 33 21 36 34
+rect 25 19 36 21
+rect 42 26 53 36
+rect 42 21 45 26
+rect 50 21 53 26
+rect 42 19 53 21
+rect 59 34 72 36
+rect 59 21 62 34
+rect 69 21 72 34
+rect 59 19 72 21
+rect 78 34 88 36
+rect 78 21 81 34
+rect 86 21 88 34
+rect 78 19 88 21
 << pdiff >>
-rect 18 104 28 106
-rect 18 74 20 104
-rect 25 74 28 104
-rect 18 72 28 74
-rect 34 72 39 106
-rect 45 72 51 106
-rect 57 104 70 106
-rect 57 74 60 104
-rect 67 74 70 104
-rect 57 72 70 74
-rect 76 104 86 106
-rect 76 93 79 104
-rect 84 93 86 104
-rect 76 79 86 93
-rect 76 72 87 79
+rect 18 105 28 107
+rect 18 75 20 105
+rect 25 75 28 105
+rect 18 73 28 75
+rect 34 73 39 107
+rect 45 73 51 107
+rect 57 105 70 107
+rect 57 75 60 105
+rect 67 75 70 105
+rect 57 73 70 75
+rect 76 105 86 107
+rect 76 94 79 105
+rect 84 94 86 105
+rect 76 73 86 94
 << ndiffc >>
-rect 11 23 16 36
-rect 28 23 33 36
-rect 45 23 50 28
-rect 62 23 69 36
-rect 81 23 86 36
+rect 11 21 16 34
+rect 28 21 33 34
+rect 45 21 50 26
+rect 62 21 69 34
+rect 81 21 86 34
 << pdiffc >>
-rect 20 74 25 104
-rect 60 74 67 104
-rect 79 93 84 104
+rect 20 75 25 105
+rect 60 75 67 105
+rect 79 94 84 105
 << psubdiff >>
-rect 6 12 21 14
-rect 6 7 11 12
-rect 16 7 21 12
-rect 6 5 21 7
-rect 29 12 44 14
-rect 29 7 34 12
-rect 39 7 44 12
-rect 29 5 44 7
-rect 52 12 67 14
-rect 52 7 57 12
-rect 62 7 67 12
-rect 52 5 67 7
-rect 75 12 90 14
-rect 75 7 80 12
-rect 85 7 90 12
-rect 75 5 90 7
+rect 6 10 21 12
+rect 6 5 11 10
+rect 16 5 21 10
+rect 6 3 21 5
+rect 29 10 44 12
+rect 29 5 34 10
+rect 39 5 44 10
+rect 29 3 44 5
+rect 52 10 67 12
+rect 52 5 57 10
+rect 62 5 67 10
+rect 52 3 67 5
+rect 75 10 90 12
+rect 75 5 80 10
+rect 85 5 90 10
+rect 75 3 90 5
 << nsubdiff >>
-rect 6 120 21 122
-rect 6 115 11 120
-rect 16 115 21 120
-rect 6 113 21 115
-rect 29 120 44 122
-rect 29 115 34 120
-rect 39 115 44 120
-rect 29 113 44 115
-rect 52 120 67 122
-rect 52 115 57 120
-rect 62 115 67 120
-rect 52 113 67 115
-rect 75 120 90 122
-rect 75 115 80 120
-rect 85 115 90 120
-rect 75 113 90 115
+rect 6 121 21 123
+rect 6 116 11 121
+rect 16 116 21 121
+rect 6 114 21 116
+rect 29 121 44 123
+rect 29 116 34 121
+rect 39 116 44 121
+rect 29 114 44 116
+rect 52 121 67 123
+rect 52 116 57 121
+rect 62 116 67 121
+rect 52 114 67 116
+rect 75 121 90 123
+rect 75 116 80 121
+rect 85 116 90 121
+rect 75 114 90 116
 << psubdiffcont >>
-rect 11 7 16 12
-rect 34 7 39 12
-rect 57 7 62 12
-rect 80 7 85 12
+rect 11 5 16 10
+rect 34 5 39 10
+rect 57 5 62 10
+rect 80 5 85 10
 << nsubdiffcont >>
-rect 11 115 16 120
-rect 34 115 39 120
-rect 57 115 62 120
-rect 80 115 85 120
+rect 11 116 16 121
+rect 34 116 39 121
+rect 57 116 62 121
+rect 80 116 85 121
 << polysilicon >>
-rect 28 106 34 111
-rect 39 106 45 111
-rect 51 106 57 111
-rect 70 106 76 111
-rect 28 70 34 72
-rect 19 64 34 70
-rect 19 54 25 64
-rect 39 54 45 72
-rect 51 67 57 72
-rect 50 65 61 67
-rect 50 59 53 65
-rect 59 59 61 65
-rect 50 57 61 59
-rect 15 52 25 54
-rect 15 46 17 52
-rect 23 46 25 52
-rect 15 44 25 46
-rect 34 52 45 54
-rect 34 46 37 52
-rect 43 46 45 52
-rect 34 44 45 46
-rect 51 47 57 57
-rect 70 54 76 72
-rect 65 52 78 54
-rect 51 44 59 47
-rect 65 46 67 52
-rect 73 46 78 52
-rect 65 44 78 46
-rect 19 38 25 44
-rect 36 38 42 44
-rect 53 38 59 44
-rect 72 38 78 44
-rect 19 16 25 21
-rect 36 16 42 21
-rect 53 16 59 21
-rect 72 16 78 21
+rect 28 107 34 112
+rect 39 107 45 112
+rect 51 107 57 112
+rect 70 107 76 112
+rect 28 71 34 73
+rect 19 65 34 71
+rect 19 56 25 65
+rect 39 56 45 73
+rect 15 54 25 56
+rect 15 48 17 54
+rect 23 48 25 54
+rect 15 46 25 48
+rect 33 54 45 56
+rect 33 48 36 54
+rect 42 52 45 54
+rect 51 68 57 73
+rect 51 66 62 68
+rect 51 60 54 66
+rect 60 60 62 66
+rect 51 58 62 60
+rect 42 48 44 52
+rect 33 46 44 48
+rect 19 36 25 46
+rect 36 36 42 46
+rect 51 45 57 58
+rect 70 52 76 73
+rect 65 50 78 52
+rect 51 42 59 45
+rect 65 44 67 50
+rect 73 44 78 50
+rect 65 42 78 44
+rect 53 36 59 42
+rect 72 36 78 42
+rect 19 14 25 19
+rect 36 14 42 19
+rect 53 14 59 19
+rect 72 14 78 19
 << polycontact >>
-rect 53 59 59 65
-rect 17 46 23 52
-rect 37 46 43 52
-rect 67 46 73 52
+rect 17 48 23 54
+rect 36 48 42 54
+rect 54 60 60 66
+rect 67 44 73 50
 << metal1 >>
-rect 0 120 98 127
-rect 0 115 11 120
-rect 16 115 34 120
-rect 39 115 57 120
-rect 62 115 80 120
-rect 85 115 98 120
-rect 0 113 98 115
-rect 20 104 25 113
-rect 20 72 25 74
-rect 60 104 67 106
-rect 79 104 84 113
-rect 79 91 84 93
-rect 67 74 80 78
-rect 60 72 80 74
+rect 0 121 102 126
+rect 0 116 11 121
+rect 16 116 34 121
+rect 39 116 57 121
+rect 62 116 80 121
+rect 85 116 102 121
+rect 0 114 102 116
+rect 20 105 25 114
+rect 20 73 25 75
+rect 60 105 67 107
+rect 79 105 84 114
+rect 79 92 84 94
+rect 67 78 86 79
+rect 67 75 80 78
+rect 60 73 80 75
+rect 78 72 80 73
 rect 86 72 88 78
 rect 80 71 87 72
-rect 51 59 53 65
-rect 59 59 61 65
-rect 15 46 17 52
-rect 23 46 25 52
-rect 35 46 37 52
-rect 43 46 45 52
-rect 65 46 67 52
-rect 73 46 75 52
-rect 11 36 16 38
-rect 11 14 16 23
-rect 28 36 69 40
-rect 33 35 62 36
-rect 28 21 33 23
-rect 45 28 50 30
-rect 45 14 50 23
-rect 62 21 69 23
-rect 81 36 86 71
-rect 81 21 86 23
-rect 0 12 98 14
-rect 0 7 11 12
-rect 16 7 34 12
-rect 39 7 57 12
-rect 62 7 80 12
-rect 85 7 98 12
-rect 0 0 98 7
+rect 52 60 54 66
+rect 60 60 62 66
+rect 15 48 17 54
+rect 23 48 25 54
+rect 34 48 36 54
+rect 42 48 44 54
+rect 65 44 67 50
+rect 73 44 75 50
+rect 11 34 16 36
+rect 11 12 16 21
+rect 28 34 69 38
+rect 33 33 62 34
+rect 28 19 33 21
+rect 45 26 50 28
+rect 45 12 50 21
+rect 62 19 69 21
+rect 81 34 86 71
+rect 81 19 86 21
+rect 0 10 102 12
+rect 0 5 11 10
+rect 16 5 34 10
+rect 39 5 57 10
+rect 62 5 80 10
+rect 85 5 102 10
+rect 0 0 102 5
 << via1 >>
 rect 80 72 86 78
-rect 53 59 59 65
-rect 17 46 23 52
-rect 37 46 43 52
-rect 67 46 73 52
+rect 54 60 60 66
+rect 17 48 23 54
+rect 36 48 42 54
+rect 67 44 73 50
 << metal2 >>
 rect 79 78 87 79
 rect 78 72 80 78
 rect 86 72 88 78
 rect 79 71 87 72
-rect 51 65 61 66
-rect 51 59 53 65
-rect 59 59 61 65
-rect 51 58 61 59
-rect 15 52 25 53
-rect 15 46 17 52
-rect 23 46 25 52
-rect 15 45 25 46
-rect 35 52 45 53
-rect 35 46 37 52
-rect 43 46 45 52
-rect 35 45 45 46
-rect 65 52 75 53
-rect 65 46 67 52
-rect 73 46 75 52
-rect 65 45 75 46
+rect 52 66 62 67
+rect 52 60 54 66
+rect 60 60 62 66
+rect 52 59 62 60
+rect 15 54 25 55
+rect 15 48 17 54
+rect 23 48 25 54
+rect 15 47 25 48
+rect 34 54 44 55
+rect 34 48 36 54
+rect 42 48 44 54
+rect 34 47 44 48
+rect 65 50 75 51
+rect 65 44 67 50
+rect 73 44 75 50
+rect 65 43 75 44
+rect 66 36 72 43
 << labels >>
-rlabel metal2 40 49 40 49 1 A0
-port 1 n
-rlabel metal2 56 62 56 62 1 A1
-port 2 n
-rlabel metal2 20 49 20 49 1 A2
+rlabel psubdiffcont 13 8 13 8 1 VSS
+port 7 n
+rlabel nsubdiffcont 13 118 13 118 1 VDD
+port 6 n
+rlabel metal2 20 51 20 51 1 A2
 port 3 n
-rlabel metal2 70 49 70 49 1 B
+rlabel metal2 39 51 39 51 1 A0
+port 1 n
+rlabel metal2 57 63 57 63 1 A1
+port 2 n
+rlabel metal2 66 36 72 42 1 B
 port 4 n
 rlabel metal2 83 75 83 75 1 Y
 port 5 n
-rlabel metal1 13 117 13 117 1 VDD
-port 6 n
-rlabel metal1 13 10 13 10 1 VSS
-port 7 n
+<< properties >>
+string MASKHINTS_NPLUS 0 114 102 126
+string MASKHINTS_PPLUS 0 0 102 12
 << end >>

@@ -32,7 +32,7 @@ END UNITS
 SITE gf180mcu_osu_sc_gp9t3v3
   SYMMETRY X Y ;
   CLASS core ;
-  SIZE 0.10 BY 6.350 ;
+  SIZE 0.10 BY 6.300 ;
 END gf180mcu_osu_sc_gp9t3v3
 
 PROPERTYDEFINITIONS
@@ -66,11 +66,11 @@ LAYER Metal1
     TYPE ROUTING ;
     DIRECTION HORIZONTAL ;
 
-    PITCH 0.56 ;
+    PITCH 0.70 ;
     OFFSET 0.0 ;
 
     MINWIDTH 0.230 ;                   # Mn.1  (n=1)
-    WIDTH 0.230 ;                      # Mn.1  (n=1)
+    WIDTH 0.300 ;                      # Mn.1  (n=1)
     SPACING 0.230  ;                   # Mn.2a (n=1)
     SPACING 0.300 RANGE 10.005 999.00 ; # Mn.2b
     AREA 0.1444 ;                      # Mn.3
@@ -116,11 +116,11 @@ LAYER Metal2
     TYPE ROUTING ;
     DIRECTION VERTICAL ;
 
-    PITCH 0.56 ;
+    PITCH 0.70 ;
     OFFSET 0.0 ;
 
     MINWIDTH 0.280 ;
-    WIDTH 0.280 ;                        # Mn.1  (n>1)
+    WIDTH 0.300 ;                        # Mn.1  (n>1)
     SPACING 0.280 ;                      # Mn.2a (n>1)
     SPACING 0.300 RANGE 10.005 999.00 ;  # Mn.2b
     AREA 0.1444 ;                        # Mn.3

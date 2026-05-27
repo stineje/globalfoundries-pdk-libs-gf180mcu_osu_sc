@@ -16,12 +16,12 @@ Subcircuit pins:
 Circuit 1: gf180mcu_osu_sc_gp9t3v3__oai31_ |Circuit 2: gf180mcu_osu_sc_gp9t3v3__oai31_ 
 -------------------------------------------|-------------------------------------------
 VSS                                        |VSS                                        
-VDD                                        |VDD                                        
+Y                                          |Y                                          
 A2                                         |A2                                         
 A0                                         |A0                                         
 B                                          |B                                          
 A1                                         |A1                                         
-Y                                          |Y                                          
+VDD                                        |VDD                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_osu_sc_gp9t3v3__oai31_1 and gf180mcu_osu_sc_gp9t3v3__oai31_1 are equivalent.

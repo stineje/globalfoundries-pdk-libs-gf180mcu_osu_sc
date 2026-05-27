@@ -15,9 +15,9 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: gf180mcu_osu_sc_gp9t3v3__oai22_ |Circuit 2: gf180mcu_osu_sc_gp9t3v3__oai22_ 
 -------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
-Y                                          |Y                                          
 A0                                         |A0                                         
 A1                                         |A1                                         
 B1                                         |B1                                         

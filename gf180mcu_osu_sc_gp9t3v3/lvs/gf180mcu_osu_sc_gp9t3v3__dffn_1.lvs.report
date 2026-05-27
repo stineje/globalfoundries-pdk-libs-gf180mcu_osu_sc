@@ -13,9 +13,9 @@ Circuits match uniquely.
 Property errors were found.
 Netlists match uniquely.
 There were property errors.
-pfet_03v3:26 vs. pfet_03v3:M21:
+pfet_03v3:11 vs. pfet_03v3:M21:
  w circuit1: 1.7e-06   circuit2: 3.4e-06   (delta=66.7%, cutoff=1%)
-nfet_03v3:4 vs. nfet_03v3:M22:
+nfet_03v3:5 vs. nfet_03v3:M22:
  w circuit1: 8.5e-07   circuit2: 1.7e-06   (delta=66.7%, cutoff=1%)
 
 Subcircuit pins:
