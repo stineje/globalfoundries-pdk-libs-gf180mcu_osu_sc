@@ -15,13 +15,13 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: gf180mcu_osu_sc_gp12t3v3__oai31 |Circuit 2: gf180mcu_osu_sc_gp12t3v3__oai31 
 -------------------------------------------|-------------------------------------------
-Y                                          |Y                                          
 VSS                                        |VSS                                        
 VDD                                        |VDD                                        
 A0                                         |A2 **Mismatch**                            
 A1                                         |A0 **Mismatch**                            
 B                                          |B                                          
 A2                                         |A1 **Mismatch**                            
+Y                                          |Y                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists for gf180mcu_osu_sc_gp12t3v3__oai31_1 and gf180mcu_osu_sc_gp12t3v3__oai31_1 altered to match.
 Cells failed matching, or top level cell failed pin matching.

@@ -16,12 +16,12 @@ Subcircuit pins:
 Circuit 1: gf180mcu_osu_sc_gp12t3v3__addf_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3__addf_ 
 -------------------------------------------|-------------------------------------------
 CI                                         |CI                                         
-CO                                         |CO                                         
-SUM                                        |SUM                                        
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 A                                          |A                                          
 B                                          |B                                          
+CO                                         |CO                                         
+SUM                                        |SUM                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_osu_sc_gp12t3v3__addf_1 and gf180mcu_osu_sc_gp12t3v3__addf_1 are equivalent.

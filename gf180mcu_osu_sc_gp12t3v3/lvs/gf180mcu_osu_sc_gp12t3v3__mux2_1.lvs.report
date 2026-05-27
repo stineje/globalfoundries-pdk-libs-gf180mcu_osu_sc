@@ -4,8 +4,8 @@ Equate elements:  no current cell.
 Subcircuit summary:
 Circuit 1: gf180mcu_osu_sc_gp12t3v3__mux2_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3__mux2_ 
 -------------------------------------------|-------------------------------------------
-pfet_03v3 (3)                              |pfet_03v3 (3)                              
 nfet_03v3 (3)                              |nfet_03v3 (3)                              
+pfet_03v3 (3)                              |pfet_03v3 (3)                              
 Number of devices: 6                       |Number of devices: 6                       
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
@@ -15,13 +15,12 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: gf180mcu_osu_sc_gp12t3v3__mux2_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3__mux2_ 
 -------------------------------------------|-------------------------------------------
-Sel                                        |Sel                                        
+I1                                         |B **Mismatch**                             
+I0                                         |A **Mismatch**                             
+S                                          |Sel **Mismatch**                           
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 Y                                          |Y                                          
-A                                          |A                                          
-B                                          |B                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes gf180mcu_osu_sc_gp12t3v3__mux2_1 and gf180mcu_osu_sc_gp12t3v3__mux2_1 are equivalent.
-Circuits match uniquely.
+Cell pin lists for gf180mcu_osu_sc_gp12t3v3__mux2_1 and gf180mcu_osu_sc_gp12t3v3__mux2_1 altered to match.
+Cells failed matching, or top level cell failed pin matching.

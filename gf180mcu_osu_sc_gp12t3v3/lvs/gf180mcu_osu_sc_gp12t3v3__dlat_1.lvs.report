@@ -13,11 +13,11 @@ Circuits match uniquely.
 Property errors were found.
 Netlists match uniquely.
 There were property errors.
-nfet_03v3:1 vs. nfet_03v3:M26:
+nfet_03v3:2 vs. nfet_03v3:M26:
  w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
 nfet_03v3:11 vs. nfet_03v3:M6:
  w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
-nfet_03v3:2 vs. nfet_03v3:M24:
+nfet_03v3:3 vs. nfet_03v3:M24:
  w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
 nfet_03v3:13 vs. nfet_03v3:M8:
  w circuit1: 8.5e-07   circuit2: 6e-07   (delta=34.5%, cutoff=1%)
@@ -25,11 +25,11 @@ nfet_03v3:13 vs. nfet_03v3:M8:
 Subcircuit pins:
 Circuit 1: gf180mcu_osu_sc_gp12t3v3__dlat_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3__dlat_ 
 -------------------------------------------|-------------------------------------------
-D                                          |D                                          
-Q                                          |Q                                          
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 CLK                                        |CLK                                        
+D                                          |D                                          
+Q                                          |Q                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes gf180mcu_osu_sc_gp12t3v3__dlat_1 and gf180mcu_osu_sc_gp12t3v3__dlat_1 are equivalent.
