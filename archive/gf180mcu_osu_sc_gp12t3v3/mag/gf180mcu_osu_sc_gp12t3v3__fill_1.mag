@@ -1,0 +1,29 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1772989189
+<< error_p >>
+rect 7 104 18 168
+<< nwell >>
+rect 0 104 7 168
+<< metal1 >>
+rect 0 156 7 168
+rect 0 0 7 12
+<< labels >>
+rlabel metal1 6 5 6 5 2 VSS
+port 2 n
+rlabel metal1 6 162 6 162 3 VDD
+port 1 n
+<< end >>

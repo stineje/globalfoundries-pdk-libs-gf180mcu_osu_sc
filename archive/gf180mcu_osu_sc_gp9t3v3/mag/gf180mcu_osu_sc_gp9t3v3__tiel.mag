@@ -1,0 +1,111 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1757177075
+<< nwell >>
+rect 0 64 48 126
+<< nmos >>
+rect 19 19 25 36
+<< pmos >>
+rect 19 73 25 107
+<< ndiff >>
+rect 9 34 19 36
+rect 9 21 11 34
+rect 16 21 19 34
+rect 9 19 19 21
+rect 25 29 35 36
+rect 25 21 28 29
+rect 33 21 35 29
+rect 25 19 35 21
+<< pdiff >>
+rect 9 105 19 107
+rect 9 75 11 105
+rect 16 75 19 105
+rect 9 73 19 75
+rect 25 105 35 107
+rect 25 75 28 105
+rect 33 75 35 105
+rect 25 73 35 75
+<< ndiffc >>
+rect 11 21 16 34
+rect 28 21 33 29
+<< pdiffc >>
+rect 11 75 16 105
+rect 28 75 33 105
+<< psubdiff >>
+rect 6 10 21 12
+rect 6 5 11 10
+rect 16 5 21 10
+rect 6 3 21 5
+<< nsubdiff >>
+rect 6 121 21 123
+rect 6 116 11 121
+rect 16 116 21 121
+rect 6 114 21 116
+<< psubdiffcont >>
+rect 11 5 16 10
+<< nsubdiffcont >>
+rect 11 116 16 121
+<< polysilicon >>
+rect 19 107 25 112
+rect 19 68 25 73
+rect 19 66 33 68
+rect 19 61 26 66
+rect 31 61 33 66
+rect 19 59 33 61
+rect 19 36 25 59
+rect 19 14 25 19
+<< polycontact >>
+rect 26 61 31 66
+<< metal1 >>
+rect 0 121 48 126
+rect 0 116 11 121
+rect 16 116 48 121
+rect 0 114 48 116
+rect 11 105 16 114
+rect 11 73 16 75
+rect 28 105 33 107
+rect 28 66 33 75
+rect 23 61 26 66
+rect 31 61 33 66
+rect 28 42 33 43
+rect 26 36 28 42
+rect 34 36 36 42
+rect 11 34 16 36
+rect 11 12 16 21
+rect 28 29 33 36
+rect 28 19 33 21
+rect 0 10 48 12
+rect 0 5 11 10
+rect 16 5 48 10
+rect 0 0 48 5
+<< via1 >>
+rect 28 36 34 42
+<< metal2 >>
+rect 26 42 36 43
+rect 26 36 28 42
+rect 34 36 36 42
+rect 26 35 36 36
+<< labels >>
+rlabel psubdiffcont 13 7 13 7 1 VSS
+port 3 n
+rlabel nsubdiffcont 13 119 13 119 1 VDD
+port 2 n
+rlabel metal2 31 39 31 39 1 Y
+port 1 n
+<< properties >>
+string MASKHINTS_NPLUS 0 114 48 126
+string MASKHINTS_PPLUS 0 0 48 12
+<< end >>

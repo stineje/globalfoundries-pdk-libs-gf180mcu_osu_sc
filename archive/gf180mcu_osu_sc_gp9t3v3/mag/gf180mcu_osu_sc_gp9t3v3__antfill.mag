@@ -1,0 +1,67 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1757172057
+<< nwell >>
+rect 0 64 48 126
+<< psubdiff >>
+rect 6 10 21 12
+rect 6 5 11 10
+rect 16 5 21 10
+rect 6 3 21 5
+<< nsubdiff >>
+rect 6 121 21 123
+rect 6 116 11 121
+rect 16 116 21 121
+rect 6 114 21 116
+<< psubdiffcont >>
+rect 11 5 16 10
+<< nsubdiffcont >>
+rect 11 116 16 121
+<< metal1 >>
+rect 0 121 48 126
+rect 0 116 11 121
+rect 16 116 48 121
+rect 0 114 48 116
+rect 11 55 16 107
+rect 28 73 33 114
+rect 11 54 17 55
+rect 10 48 12 54
+rect 18 48 33 54
+rect 11 47 17 48
+rect 11 19 16 47
+rect 28 19 33 48
+rect 0 10 48 12
+rect 0 5 11 10
+rect 16 5 48 10
+rect 0 0 48 5
+<< via1 >>
+rect 12 48 18 54
+<< metal2 >>
+rect 11 54 19 55
+rect 10 48 12 54
+rect 18 48 20 54
+rect 11 47 19 48
+<< labels >>
+rlabel psubdiffcont 13 7 13 7 1 VSS
+port 4 n
+rlabel nsubdiffcont 14 118 14 118 1 VDD
+port 3 n
+rlabel metal2 15 51 15 51 1 A
+port 5 n
+<< properties >>
+string MASKHINTS_NPLUS 0 114 48 126
+string MASKHINTS_PPLUS 0 0 48 12
+<< end >>
