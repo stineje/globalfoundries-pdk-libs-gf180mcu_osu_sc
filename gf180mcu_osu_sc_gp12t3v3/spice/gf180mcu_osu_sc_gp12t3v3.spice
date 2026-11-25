@@ -850,13 +850,13 @@ X7 a_26_19# A VSS VSS nfet_03v3 ad=0.468p pd=2.8u as=0.468p ps=2.8u w=0.85u l=0.
 
 * NGSPICE file created from gf180mcu_osu_sc_gp12t3v3__mux2_1.ext - technology: gf180mcuC
 
-.subckt gf180mcu_osu_sc_gp12t3v3__mux2_1 I0 I1 S Y VDD VSS
-X0 Y a_25_19# I0 VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
-X1 a_25_19# S VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
-X2 I1 a_25_19# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
-X3 Y S I0 VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
-X4 a_25_19# S VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
-X5 I1 S Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
+.subckt gf180mcu_osu_sc_gp12t3v3__mux2_1 A B Sel Y VDD VSS
+X0 Y a_25_19# A VSS nfet_03v3 ad=0.233p pd=1.4u as=0.425p ps=2.7u w=0.85u l=0.3u
+X1 a_25_19# Sel VSS VSS nfet_03v3 ad=0.425p pd=2.7u as=0.425p ps=2.7u w=0.85u l=0.3u
+X2 B a_25_19# Y VDD pfet_03v3 ad=0.85p pd=4.4u as=0.468p ps=2.25u w=1.7u l=0.3u
+X3 Y Sel A VDD pfet_03v3 ad=0.468p pd=2.25u as=0.85p ps=4.4u w=1.7u l=0.3u
+X4 a_25_19# Sel VDD VDD pfet_03v3 ad=0.85p pd=4.4u as=0.85p ps=4.4u w=1.7u l=0.3u
+X5 B Sel Y VSS nfet_03v3 ad=0.425p pd=2.7u as=0.233p ps=1.4u w=0.85u l=0.3u
 .ends
 
 

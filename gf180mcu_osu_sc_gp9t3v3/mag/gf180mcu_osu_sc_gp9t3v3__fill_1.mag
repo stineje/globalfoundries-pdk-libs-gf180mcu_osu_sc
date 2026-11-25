@@ -14,8 +14,6 @@
 magic
 tech gf180mcuC
 timestamp 1757175198
-<< error_p >>
-rect 6 64 18 126
 << nwell >>
 rect 0 64 6 126
 << metal1 >>
@@ -26,4 +24,7 @@ rlabel metal1 1 5 1 5 2 VSS
 port 2 n
 rlabel metal1 1 120 1 120 3 VDD
 port 1 n
+<< properties >>
+string MASKHINTS_NPLUS 0 114 6 126
+string MASKHINTS_PPLUS 0 0 6 12
 << end >>

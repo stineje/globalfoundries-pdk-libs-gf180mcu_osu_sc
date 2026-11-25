@@ -1,0 +1,423 @@
+<HTML><BODY TEXT="#000000"  LINK="#0000FF" VLINK="#0000FF" ALINK="#00FFFF"><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5 WIDTH=100%>
+<TR align=center><th align=left><H1><font size=+3>GF180MCU_OSU_SC_GP12T3V3__MUX2_1</font></H1></th>
+<TR align=center><th align=left></th><th align=right><h5><em><A>gf180mcu_osu_sc_gp12t3v3_TT_25C.ccs_mux Cell Library: Process , Voltage 3.30, Temp 25.00 </A></em></h5></th></TR>
+</TABLE>
+<HR>
+<BR>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=100%>
+<TR ALIGN=LEFT VALIGN=TOP><TH><FONT SIZE=+2><B>Truth Table</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4>
+<TR valign=middle><TH colspan=3><font size=3>INPUT</font></TH>
+<TH colspan=1><font size=3>OUTPUT</font></TH>
+<TR><Th>A</Th><Th>B</Th><Th>Sel</Th><Th>Y</Th></TR>
+<TR><Th><font size=2>0</font></Th><Th><font size=2>0</font></Th><Th><font size=2>x</font></Th><Th><font size=2>0</font></Th></TR>
+<TR><Th><font size=2>0</font></Th><Th><font size=2>1</font></Th><Th><font size=2>0</font></Th><Th><font size=2>0</font></Th></TR>
+<TR><Th><font size=2>x</font></Th><Th><font size=2>1</font></Th><Th><font size=2>1</font></Th><Th><font size=2>1</font></Th></TR>
+<TR><Th><font size=2>1</font></Th><Th><font size=2>x</font></Th><Th><font size=2>0</font></Th><Th><font size=2>1</font></Th></TR>
+<TR><Th><font size=2>1</font></Th><Th><font size=2>0</font></Th><Th><font size=2>1</font></Th><Th><font size=2>0</font></Th></TR>
+</TABLE>
+</TR></TABLE>
+<BR>
+<FONT SIZE=+2><B>Footprint</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=60%>
+<TR valign=middle><TH>Cell Name</TH><TH>Area</TH></TR>
+<TR><TH><FONT>gf180mcu_osu_sc_gp12t3v3__mux2_1</FONT></TH>
+<TD align=center>40.32000</TD></TR>
+</TABLE>
+<BR>
+<BR>
+<FONT SIZE=+2><B>Pin Capacitance Information</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH>
+<TH colspan=3>Pin Cap(pf) </TH>
+<TH colspan=1>Max Cap(pf) </TH>
+</TR>
+<TR>
+<TH>A</TH>
+<TH>B</TH>
+<TH>Sel</TH>
+<TH>Y</TH>
+</TR>
+<TR><Th><font>gf180mcu_osu_sc_gp12t3v3__mux2_1</font></Th>
+<TD align=center>2.35488</TD>
+<TD align=center>2.35488</TD>
+<TD align=center>0.00808</TD>
+<TD align=center>2.40000</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT SIZE=+2><B>Leakage Information</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH><TH colspan=3>Leakage(nW)</TH>
+</TR><TR><TH>Min.</TH><TH>Avg</TH><TH>Max.</TH></TR>
+<TR><Th><font>gf180mcu_osu_sc_gp12t3v3__mux2_1</font></Th>
+<TD align=center>0.00000</TD>
+<TD align=center>0.00197</TD>
+<TD align=center>0.00201</TD>
+</TABLE>
+<BR>
+<!--NewPage-->
+<BR>
+<FONT SIZE=+2><B>Delay Information</B></FONT>
+<BR>
+<BR>
+<FONT><B>Delay(ns) to Y rising (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Timing Arc(Dir)</TH>
+<TH rowspan=2>When</TH>
+<TH colspan=3>Delay(ns)</TH></TR><TR><TH>First</TH><TH>Mid</TH><TH>Last</TH></TR>
+<BR>
+<TR><TH rowspan=4>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>A->Y (RR)</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.01761</TD>
+<TD align=center>0.40283</TD>
+<TD align=center>7.80467</TD>
+</TR>
+<TR>
+<Th><font>B->Y (RR)</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.01924</TD>
+<TD align=center>0.40365</TD>
+<TD align=center>7.80553</TD>
+</TR>
+<TR>
+<Th><font>Sel->Y (RR)</font></Th>
+<Th><font>(!A * B)</font></Th>
+<TD align=center>0.06280</TD>
+<TD align=center>0.46989</TD>
+<TD align=center>5.96623</TD>
+</TR>
+<TR>
+<Th><font>Sel->Y (FR)</font></Th>
+<Th><font>(A * !B)</font></Th>
+<TD align=center>0.04412</TD>
+<TD align=center>1.38242</TD>
+<TD align=center>24.82110</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Delay(ns) to Y falling (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Timing Arc(Dir)</TH>
+<TH rowspan=2>When</TH>
+<TH colspan=3>Delay(ns)</TH></TR><TR><TH>First</TH><TH>Mid</TH><TH>Last</TH></TR>
+<BR>
+<TR><TH rowspan=4>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>A->Y (FF)</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.02157</TD>
+<TD align=center>0.42171</TD>
+<TD align=center>8.16121</TD>
+</TR>
+<TR>
+<Th><font>B->Y (FF)</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.01938</TD>
+<TD align=center>0.42072</TD>
+<TD align=center>8.16016</TD>
+</TR>
+<TR>
+<Th><font>Sel->Y (FF)</font></Th>
+<Th><font>(!A * B)</font></Th>
+<TD align=center>0.07320</TD>
+<TD align=center>1.16102</TD>
+<TD align=center>18.36650</TD>
+</TR>
+<TR>
+<Th><font>Sel->Y (RF)</font></Th>
+<Th><font>(A * !B)</font></Th>
+<TD align=center>0.03646</TD>
+<TD align=center>0.75954</TD>
+<TD align=center>13.64890</TD>
+</TR>
+</TABLE>
+<BR>
+<!--NewPage-->
+<BR>
+<FONT SIZE=+2><B>Power Information</B></FONT>
+<BR>
+<BR>
+<FONT><B>Internal switching power(pJ) to Y rising (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Input</TH>
+<TH rowspan=2>When</TH>
+<TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=8>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>A</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>-0.01951</TD>
+<TD align=center>-0.01956</TD>
+<TD align=center>-0.01954</TD>
+</TR>
+<TR>
+<Th><font>A</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.00678</TD>
+<TD align=center>0.00681</TD>
+<TD align=center>0.00680</TD>
+</TR>
+<TR>
+<Th><font>B</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>-0.01286</TD>
+<TD align=center>-0.01293</TD>
+<TD align=center>-0.01292</TD>
+</TR>
+<TR>
+<Th><font>B</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.01753</TD>
+<TD align=center>0.01762</TD>
+<TD align=center>0.01760</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(A * !B)</font></Th>
+<TD align=center>0.01689</TD>
+<TD align=center>0.39185</TD>
+<TD align=center>6.88591</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(A * !B)</font></Th>
+<TD align=center>0.00285</TD>
+<TD align=center>0.37773</TD>
+<TD align=center>6.87287</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(!A * B)</font></Th>
+<TD align=center>-0.01417</TD>
+<TD align=center>0.35526</TD>
+<TD align=center>6.84457</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(!A * B)</font></Th>
+<TD align=center>0.04384</TD>
+<TD align=center>0.41525</TD>
+<TD align=center>6.93154</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Internal switching power(pJ) to Y falling (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Input</TH>
+<TH rowspan=2>When</TH>
+<TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=8>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>A</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.01951</TD>
+<TD align=center>0.01956</TD>
+<TD align=center>0.01954</TD>
+</TR>
+<TR>
+<Th><font>A</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>-0.00678</TD>
+<TD align=center>-0.00679</TD>
+<TD align=center>-0.00677</TD>
+</TR>
+<TR>
+<Th><font>B</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>0.01289</TD>
+<TD align=center>0.01293</TD>
+<TD align=center>0.01292</TD>
+</TR>
+<TR>
+<Th><font>B</font></Th>
+<Th><font>-</font></Th>
+<TD align=center>-0.01753</TD>
+<TD align=center>-0.01757</TD>
+<TD align=center>-0.01755</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(A * !B)</font></Th>
+<TD align=center>0.00501</TD>
+<TD align=center>0.37511</TD>
+<TD align=center>6.87000</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(A * !B)</font></Th>
+<TD align=center>0.01900</TD>
+<TD align=center>0.39058</TD>
+<TD align=center>6.90846</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(!A * B)</font></Th>
+<TD align=center>0.05063</TD>
+<TD align=center>0.42281</TD>
+<TD align=center>6.91119</TD>
+</TR>
+<TR>
+<Th><font>Sel</font></Th>
+<Th><font>(!A * B)</font></Th>
+<TD align=center>-0.00733</TD>
+<TD align=center>0.36495</TD>
+<TD align=center>6.85896</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Passive power(pJ) for A rising (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH>
+<TH rowspan=2>When</TH>
+</TH><TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=2>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>(B * Sel * Y) + (!B * Sel * !Y)</font></Th>
+<TD align=center>-0.00347</TD>
+<TD align=center>-0.00350</TD>
+<TD align=center>-0.00348</TD>
+</TR>
+<TR>
+<Th><font>(B * Sel * Y) + (!B * Sel * !Y)</font></Th>
+<TD align=center>0.00262</TD>
+<TD align=center>0.00265</TD>
+<TD align=center>0.00263</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Passive power(pJ) for A falling (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH>
+<TH rowspan=2>When</TH>
+</TH><TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=2>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>(B * Sel * Y) + (!B * Sel * !Y)</font></Th>
+<TD align=center>0.00350</TD>
+<TD align=center>0.00350</TD>
+<TD align=center>0.00348</TD>
+</TR>
+<TR>
+<Th><font>(B * Sel * Y) + (!B * Sel * !Y)</font></Th>
+<TD align=center>-0.00262</TD>
+<TD align=center>-0.00265</TD>
+<TD align=center>-0.00263</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Passive power(pJ) for B rising (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH>
+<TH rowspan=2>When</TH>
+</TH><TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=2>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>(A * !Sel * Y) + (!A * !Sel * !Y)</font></Th>
+<TD align=center>-0.00476</TD>
+<TD align=center>-0.00480</TD>
+<TD align=center>-0.00476</TD>
+</TR>
+<TR>
+<Th><font>(A * !Sel * Y) + (!A * !Sel * !Y)</font></Th>
+<TD align=center>0.00200</TD>
+<TD align=center>0.00201</TD>
+<TD align=center>0.00200</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Passive power(pJ) for B falling (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH>
+<TH rowspan=2>When</TH>
+</TH><TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=2>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>(A * !Sel * Y) + (!A * !Sel * !Y)</font></Th>
+<TD align=center>0.00476</TD>
+<TD align=center>0.00480</TD>
+<TD align=center>0.00476</TD>
+</TR>
+<TR>
+<Th><font>(A * !Sel * Y) + (!A * !Sel * !Y)</font></Th>
+<TD align=center>-0.00200</TD>
+<TD align=center>-0.00201</TD>
+<TD align=center>-0.00200</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Passive power(pJ) for Sel rising (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH>
+<TH rowspan=2>When</TH>
+</TH><TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=4>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>(A * B * Y)</font></Th>
+<TD align=center>-0.00473</TD>
+<TD align=center>0.36862</TD>
+<TD align=center>6.85753</TD>
+</TR>
+<TR>
+<Th><font>(A * B * Y)</font></Th>
+<TD align=center>0.03308</TD>
+<TD align=center>0.40662</TD>
+<TD align=center>6.89548</TD>
+</TR>
+<TR>
+<Th><font>(!A * !B * !Y)</font></Th>
+<TD align=center>-0.00464</TD>
+<TD align=center>0.36873</TD>
+<TD align=center>6.85859</TD>
+</TR>
+<TR>
+<Th><font>(!A * !B * !Y)</font></Th>
+<TD align=center>0.02960</TD>
+<TD align=center>0.40326</TD>
+<TD align=center>6.89303</TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<FONT><B>Passive power(pJ) for Sel falling (conditional):</B></FONT>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
+<TR valign=middle><TH rowspan=2>Cell Name</TH>
+<TH rowspan=2>When</TH>
+</TH><TH colspan=3>Power(pJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
+<TR><TH rowspan=4>gf180mcu_osu_sc_gp12t3v3__mux2_1</TH>
+<Th><font>(A * B * Y)</font></Th>
+<TD align=center>0.03551</TD>
+<TD align=center>0.41268</TD>
+<TD align=center>6.89791</TD>
+</TR>
+<TR>
+<Th><font>(A * B * Y)</font></Th>
+<TD align=center>-0.00235</TD>
+<TD align=center>0.37480</TD>
+<TD align=center>6.85986</TD>
+</TR>
+<TR>
+<Th><font>(!A * !B * !Y)</font></Th>
+<TD align=center>0.03225</TD>
+<TD align=center>0.41121</TD>
+<TD align=center>6.89748</TD>
+</TR>
+<TR>
+<Th><font>(!A * !B * !Y)</font></Th>
+<TD align=center>-0.00201</TD>
+<TD align=center>0.37687</TD>
+<TD align=center>6.86291</TD>
+</TR>
+</TABLE>
+<BR>
+<DIV class=NOPRINT>
+<HR>
+<TABLE BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=LEFT></TD>
+<TD ALIGN=RIGHT></TD>
+</TR></TABLE>
+</DIV>
+</BODY>
+</HTML>

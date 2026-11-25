@@ -180,6 +180,6 @@ port 2 n
 rlabel metal2 21 91 21 91 1 A
 port 1 n
 << properties >>
-string MASKHINTS_NPLUS 0 163 84 168
-string MASKHINTS_PPLUS 0 0 84 5
+string MASKHINTS_NPLUS 0 156 84 168
+string MASKHINTS_PPLUS 0 0 84 12
 << end >>

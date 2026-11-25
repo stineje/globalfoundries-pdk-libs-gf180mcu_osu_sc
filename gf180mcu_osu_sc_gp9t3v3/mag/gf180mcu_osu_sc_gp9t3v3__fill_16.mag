@@ -24,4 +24,7 @@ rlabel metal1 6 6 6 6 1 VSS
 port 2 n
 rlabel metal1 10 120 10 120 1 VDD
 port 1 n
+<< properties >>
+string MASKHINTS_NPLUS 0 114 96 126
+string MASKHINTS_PPLUS 0 0 96 12
 << end >>

@@ -151,11 +151,11 @@ rect 45 30 47 36
 rect 53 30 55 36
 rect 45 29 55 30
 << labels >>
-rlabel psubdiffcont 13 8 13 8 1 VSS
+rlabel metal1 13 8 13 8 1 VSS
 port 4 n
 rlabel metal2 26 63 26 63 1 A
 port 1 n
-rlabel nsubdiffcont 13 118 13 118 1 VDD
+rlabel metal1 13 118 13 118 1 VDD
 port 3 n
 rlabel metal2 50 75 50 75 1 Y
 port 2 n

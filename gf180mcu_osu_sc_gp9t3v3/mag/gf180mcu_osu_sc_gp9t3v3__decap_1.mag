@@ -80,9 +80,9 @@ rect 0 5 11 10
 rect 16 5 48 10
 rect 0 0 48 5
 << labels >>
-rlabel psubdiffcont 13 7 13 7 1 VSS
+rlabel metal1 13 7 13 7 1 VSS
 port 4 n
-rlabel nsubdiffcont 14 118 14 118 1 VDD
+rlabel metal1 14 118 14 118 1 VDD
 port 3 n
 << properties >>
 string MASKHINTS_NPLUS 0 114 48 126

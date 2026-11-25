@@ -6,7 +6,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__addf_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__addf_1 0 0 ;
-  SIZE 14 BY 8.4 ;
+  SIZE 14.1 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -15,7 +15,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__addf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 14 8.4 ;
+        RECT 0 7.8 14.1 8.4 ;
         RECT 12.35 5.75 12.6 8.4 ;
         RECT 10.75 5.75 11 8.4 ;
         RECT 6.5 5.75 6.75 8.4 ;
@@ -29,7 +29,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__addf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 14 0.6 ;
+        RECT 0 0 14.1 0.6 ;
         RECT 12.35 0 12.6 1.8 ;
         RECT 10.75 0 11 1.8 ;
         RECT 6.5 0 6.75 1.45 ;
@@ -167,7 +167,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__addh_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__addh_1 0 0 ;
-  SIZE 8.05 BY 8.4 ;
+  SIZE 8.1 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -176,7 +176,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__addh_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 8.05 8.4 ;
+        RECT 0 7.8 8.1 8.4 ;
         RECT 6.4 5.75 6.65 8.4 ;
         RECT 3.85 5.75 4.1 8.4 ;
         RECT 3.1 5.75 3.35 8.4 ;
@@ -189,7 +189,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__addh_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 8.05 0.6 ;
+        RECT 0 0 8.1 0.6 ;
         RECT 6.4 0 6.65 1.8 ;
         RECT 1.4 0 1.65 1.8 ;
     END
@@ -366,7 +366,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__ant
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__ant 0 0 ;
-  SIZE 1.75 BY 8.4 ;
+  SIZE 1.8 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN I
@@ -385,7 +385,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__ant
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 1.75 8.4 ;
+        RECT 0 7.8 1.8 8.4 ;
     END
   END VDD
   PIN VSS
@@ -394,7 +394,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__ant
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 1.4 0.6 ;
+        RECT 0 0 1.5 0.6 ;
     END
   END VSS
 END gf180mcu_osu_sc_gp12t3v3__ant
@@ -492,7 +492,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__aoi22_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__aoi22_1 0 0 ;
-  SIZE 5.25 BY 8.4 ;
+  SIZE 5.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -501,7 +501,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__aoi22_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 5.25 8.4 ;
+        RECT 0 7.8 5.4 8.4 ;
         RECT 1.4 6.5 1.65 8.4 ;
     END
   END VDD
@@ -511,7 +511,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__aoi22_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 5.25 0.6 ;
+        RECT 0 0 5.4 0.6 ;
         RECT 3.5 0 3.75 1.8 ;
         RECT 0.7 0 0.95 1.8 ;
     END
@@ -601,9 +601,29 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__buf_1 0 0 ;
-  SIZE 3.15 BY 8.4 ;
+  SIZE 3.3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 7.8 3.3 8.4 ;
+        RECT 1.4 5.75 1.65 8.4 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.3 0.6 ;
+        RECT 1.4 0 1.65 1.8 ;
+    END
+  END VSS
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -633,10 +653,6 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_1
   END Y
   OBS
     LAYER Metal1 ;
-      RECT 1.4 0 1.65 1.8 ;
-      RECT 0 0 3.15 0.6 ;
-      RECT 0 7.8 3.15 8.4 ;
-      RECT 1.4 5.75 1.65 8.4 ;
       RECT 0.55 5.5 0.8 7.45 ;
       RECT 0.3 3.4 0.55 5.75 ;
       RECT 0.55 0.95 0.8 3.65 ;
@@ -648,7 +664,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_16
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__buf_16 0 0 ;
-  SIZE 16.1 BY 8.4 ;
+  SIZE 15.9 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -657,7 +673,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 16.1 8.4 ;
+        RECT 0 7.8 15.9 8.4 ;
         RECT 15 5.75 15.25 8.4 ;
         RECT 13.3 5.75 13.55 8.4 ;
         RECT 11.6 5.75 11.85 8.4 ;
@@ -675,7 +691,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 16.1 0.6 ;
+        RECT 0 0 15.9 0.6 ;
         RECT 15 0 15.25 1.8 ;
         RECT 13.3 0 13.55 1.8 ;
         RECT 11.6 0 11.85 1.8 ;
@@ -802,7 +818,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_4
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__buf_4 0 0 ;
-  SIZE 5.6 BY 8.4 ;
+  SIZE 5.7 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -811,7 +827,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 5.6 8.4 ;
+        RECT 0 7.8 5.7 8.4 ;
         RECT 4.8 5.75 5.05 8.4 ;
         RECT 3.1 5.75 3.35 8.4 ;
         RECT 1.4 5.75 1.65 8.4 ;
@@ -823,7 +839,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 5.6 0.6 ;
+        RECT 0 0 5.7 0.6 ;
         RECT 4.8 0 5.05 1.8 ;
         RECT 3.1 0 3.35 1.8 ;
         RECT 1.4 0 1.65 1.8 ;
@@ -873,7 +889,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_8
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__buf_8 0 0 ;
-  SIZE 9.1 BY 8.4 ;
+  SIZE 9 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -882,7 +898,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_8
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 9.1 8.4 ;
+        RECT 0 7.8 9 8.4 ;
         RECT 8.2 5.75 8.45 8.4 ;
         RECT 6.5 5.75 6.75 8.4 ;
         RECT 4.8 5.75 5.05 8.4 ;
@@ -896,7 +912,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__buf_8
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 9.1 0.6 ;
+        RECT 0 0 9 0.6 ;
         RECT 8.2 0 8.45 1.8 ;
         RECT 6.5 0 6.75 1.8 ;
         RECT 4.8 0 5.05 1.8 ;
@@ -950,7 +966,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkbuf_1 0 0 ;
-  SIZE 3.15 BY 8.4 ;
+  SIZE 3.3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -959,7 +975,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 3.15 8.4 ;
+        RECT 0 7.8 3.3 8.4 ;
         RECT 1.4 5.75 1.65 8.4 ;
     END
   END VDD
@@ -969,7 +985,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 3.15 0.6 ;
+        RECT 0 0 3.3 0.6 ;
         RECT 1.4 0 1.65 1.8 ;
     END
   END VSS
@@ -1013,7 +1029,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_16
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkbuf_16 0 0 ;
-  SIZE 16.1 BY 8.4 ;
+  SIZE 15.9 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1022,7 +1038,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 16.1 8.4 ;
+        RECT 0 7.8 15.9 8.4 ;
         RECT 15 5.75 15.25 8.4 ;
         RECT 13.3 5.75 13.55 8.4 ;
         RECT 11.6 5.75 11.85 8.4 ;
@@ -1040,7 +1056,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 16.1 0.6 ;
+        RECT 0 0 15.9 0.6 ;
         RECT 15 0 15.25 1.8 ;
         RECT 13.3 0 13.55 1.8 ;
         RECT 11.6 0 11.85 1.8 ;
@@ -1167,7 +1183,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_4
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkbuf_4 0 0 ;
-  SIZE 5.6 BY 8.4 ;
+  SIZE 5.7 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1176,7 +1192,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 5.6 8.4 ;
+        RECT 0 7.8 5.7 8.4 ;
         RECT 4.8 5.75 5.05 8.4 ;
         RECT 3.1 5.75 3.35 8.4 ;
         RECT 1.4 5.75 1.65 8.4 ;
@@ -1188,7 +1204,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 5.6 0.6 ;
+        RECT 0 0 5.7 0.6 ;
         RECT 4.8 0 5.05 1.8 ;
         RECT 3.1 0 3.35 1.8 ;
         RECT 1.4 0 1.65 1.8 ;
@@ -1238,7 +1254,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_8
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkbuf_8 0 0 ;
-  SIZE 9.1 BY 8.4 ;
+  SIZE 9 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1247,7 +1263,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_8
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 9.1 8.4 ;
+        RECT 0 7.8 9 8.4 ;
         RECT 8.2 5.75 8.45 8.4 ;
         RECT 6.5 5.75 6.75 8.4 ;
         RECT 4.8 5.75 5.05 8.4 ;
@@ -1261,7 +1277,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_8
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 9.1 0.6 ;
+        RECT 0 0 9 0.6 ;
         RECT 8.2 0 8.45 1.8 ;
         RECT 6.5 0 6.75 1.8 ;
         RECT 4.8 0 5.05 1.8 ;
@@ -1315,7 +1331,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkinv_1 0 0 ;
-  SIZE 2.45 BY 8.4 ;
+  SIZE 2.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1324,7 +1340,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 2.45 8.4 ;
+        RECT 0 7.8 2.4 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
   END VDD
@@ -1334,7 +1350,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 2.45 0.6 ;
+        RECT 0 0 2.4 0.6 ;
         RECT 0.55 0 0.8 1.8 ;
     END
   END VSS
@@ -1370,7 +1386,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_16
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkinv_16 0 0 ;
-  SIZE 15.05 BY 8.4 ;
+  SIZE 15 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1379,7 +1395,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 15.05 8.4 ;
+        RECT 0 7.8 15 8.4 ;
         RECT 14.15 5.75 14.4 8.4 ;
         RECT 12.45 5.75 12.7 8.4 ;
         RECT 10.75 5.75 11 8.4 ;
@@ -1397,7 +1413,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 15.05 0.6 ;
+        RECT 0 0 15 0.6 ;
         RECT 14.15 0 14.4 1.8 ;
         RECT 12.45 0 12.7 1.8 ;
         RECT 10.75 0 11 1.8 ;
@@ -1449,7 +1465,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_2
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkinv_2 0 0 ;
-  SIZE 3.15 BY 8.4 ;
+  SIZE 3.3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1458,7 +1474,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_2
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 3.15 8.4 ;
+        RECT 0 7.8 3.3 8.4 ;
         RECT 2.3 5.75 2.55 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
@@ -1469,7 +1485,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_2
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 3.15 0.6 ;
+        RECT 0 0 3.3 0.6 ;
         RECT 2.25 0 2.5 1.8 ;
         RECT 0.55 0 0.8 1.8 ;
     END
@@ -1506,7 +1522,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_4
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkinv_4 0 0 ;
-  SIZE 4.9 BY 8.4 ;
+  SIZE 4.8 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1515,7 +1531,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 4.9 8.4 ;
+        RECT 0 7.8 4.8 8.4 ;
         RECT 3.95 5.75 4.2 8.4 ;
         RECT 2.25 5.75 2.5 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
@@ -1527,7 +1543,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 4.9 0.6 ;
+        RECT 0 0 4.8 0.6 ;
         RECT 3.95 0 4.2 1.8 ;
         RECT 2.25 0 2.5 1.8 ;
         RECT 0.55 0 0.8 1.8 ;
@@ -1603,7 +1619,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_8
     USE SIGNAL ;
     PORT
       LAYER Metal1 ;
-        RECT 0.45 3.7 0.95 4 ;
+        RECT 0.45 3.65 0.95 4.05 ;
       LAYER Metal2 ;
         RECT 0.45 3.65 0.95 4.05 ;
       LAYER Via1 ;
@@ -1615,10 +1631,10 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_8
     USE SIGNAL ;
     PORT
       LAYER Metal1 ;
+        RECT 6.35 4.55 6.85 4.95 ;
         RECT 6.5 0.95 6.75 7.45 ;
-        RECT 1.4 4.65 6.75 4.9 ;
-        RECT 6.35 4.55 6.75 4.9 ;
         RECT 1.4 2.05 6.75 2.3 ;
+        RECT 1.4 4.65 6.85 4.9 ;
         RECT 4.8 0.95 5.05 7.45 ;
         RECT 3.1 0.95 3.35 7.45 ;
         RECT 1.4 0.95 1.65 7.45 ;
@@ -1634,7 +1650,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dff_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__dff_1 0 0 ;
-  SIZE 13.3 BY 8.4 ;
+  SIZE 13.5 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1643,7 +1659,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dff_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 13.3 8.4 ;
+        RECT 0 7.8 13.5 8.4 ;
         RECT 11.3 5.75 11.55 8.4 ;
         RECT 8.85 5.75 9.1 8.4 ;
         RECT 7.25 6.5 7.5 8.4 ;
@@ -1657,7 +1673,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dff_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 13.3 0.6 ;
+        RECT 0 0 13.5 0.6 ;
         RECT 11.3 0 11.55 1.8 ;
         RECT 8.85 0 9.1 1.45 ;
         RECT 7.25 0 7.5 1.8 ;
@@ -1723,8 +1739,9 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dff_1
     PORT
       LAYER Metal1 ;
         RECT 11.65 4.4 12.15 4.7 ;
+        RECT 11.7 4.4 12.1 4.75 ;
         RECT 10.45 4.35 12.05 4.65 ;
-        RECT 11.65 4.3 12.05 4.7 ;
+        RECT 11.7 4.3 12.05 4.75 ;
         RECT 11.55 2.05 11.8 4.65 ;
         RECT 10.45 2.05 11.8 2.3 ;
         RECT 10.45 4.35 10.7 7.45 ;
@@ -1788,12 +1805,17 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dff_1
       RECT 4.95 6.25 6.1 6.5 ;
       RECT 4.95 3.65 5.2 6.5 ;
       RECT 4.9 1.6 5.15 3.9 ;
+      RECT 5.8 1.5 6.2 1.9 ;
       RECT 4.9 1.6 6.25 1.85 ;
-      RECT 5.85 1.55 6.25 1.85 ;
-      RECT 5.85 0.95 6.1 1.85 ;
+      RECT 5.75 1.55 6.25 1.85 ;
+      RECT 5.75 1.5 6.2 1.85 ;
+      RECT 5.85 0.95 6.1 1.9 ;
       RECT 4.05 5 4.55 5.3 ;
-      RECT 4.15 2.2 4.45 5.3 ;
+      RECT 4.15 2.15 4.45 5.3 ;
       RECT 4.05 2.2 4.55 2.5 ;
+      RECT 4.1 2.15 4.5 2.5 ;
+      RECT 2.95 2.8 3.35 3.2 ;
+      RECT 2.9 2.85 3.4 3.15 ;
       RECT 3.05 5.15 3.3 7.45 ;
       RECT 1.4 5.15 3.3 5.4 ;
       RECT 1.4 4.3 1.65 5.4 ;
@@ -1806,7 +1828,6 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dff_1
       RECT 3.05 0.95 3.3 1.8 ;
       RECT 0.55 0.95 0.8 7.45 ;
       RECT 0.5 2.1 0.8 2.6 ;
-      RECT 2.9 2.85 3.4 3.15 ;
   END
 END gf180mcu_osu_sc_gp12t3v3__dff_1
 
@@ -1814,7 +1835,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dffn_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__dffn_1 0 0 ;
-  SIZE 14.35 BY 8.4 ;
+  SIZE 14.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -1823,7 +1844,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dffn_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 14.35 8.4 ;
+        RECT 0 7.8 14.4 8.4 ;
         RECT 12.55 5.75 12.8 8.4 ;
         RECT 9.95 5.75 10.35 8.4 ;
         RECT 7.25 6.5 7.5 8.4 ;
@@ -1837,7 +1858,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dffn_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 14.35 0.6 ;
+        RECT 0 0 14.4 0.6 ;
         RECT 12.55 0 12.8 1.8 ;
         RECT 9.95 0 10.35 1.45 ;
         RECT 7.25 0 7.5 1.8 ;
@@ -1971,7 +1992,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dffn_1
       RECT 4.95 3.65 5.2 6.5 ;
       RECT 4.9 1.6 5.15 3.9 ;
       RECT 4.9 1.6 6.25 1.85 ;
-      RECT 5.85 1.55 6.25 1.85 ;
+      RECT 5.75 1.5 6.25 1.85 ;
       RECT 5.85 0.95 6.1 1.85 ;
       RECT 4.05 5 4.55 5.3 ;
       RECT 4.15 2.2 4.45 5.3 ;
@@ -2210,7 +2231,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dffsr_1
       RECT 9 3.45 9.25 6.5 ;
       RECT 8.95 1.6 9.2 3.7 ;
       RECT 8.95 1.6 10.3 1.85 ;
-      RECT 9.9 1.55 10.3 1.85 ;
+      RECT 9.8 1.5 10.3 1.85 ;
       RECT 9.9 0.95 10.15 1.85 ;
       RECT 8.1 5 8.6 5.3 ;
       RECT 8.2 2.2 8.5 5.3 ;
@@ -2245,7 +2266,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dlat_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__dlat_1 0 0 ;
-  SIZE 9.1 BY 8.4 ;
+  SIZE 9.3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2254,7 +2275,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dlat_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 9.1 8.4 ;
+        RECT 0 7.8 9.3 8.4 ;
         RECT 7.3 5.75 7.55 8.4 ;
         RECT 4.85 5.75 5.1 8.4 ;
         RECT 1.45 6.55 1.7 8.4 ;
@@ -2266,7 +2287,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dlat_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 9.1 0.6 ;
+        RECT 0 0 9.3 0.6 ;
         RECT 7.3 0 7.55 1.8 ;
         RECT 4.7 0 5.1 1.8 ;
         RECT 1.45 0 1.85 1.8 ;
@@ -2362,7 +2383,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dlatn_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__dlatn_1 0 0 ;
-  SIZE 10.85 BY 8.4 ;
+  SIZE 10.8 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2371,7 +2392,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dlatn_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 10.85 8.4 ;
+        RECT 0 7.8 10.8 8.4 ;
         RECT 9 5.75 9.25 8.4 ;
         RECT 7.4 5.75 7.65 8.4 ;
         RECT 4.85 5.75 5.1 8.4 ;
@@ -2384,7 +2405,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__dlatn_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 10.85 0.6 ;
+        RECT 0 0 10.8 0.6 ;
         RECT 9 0 9.25 1.8 ;
         RECT 7.4 0 7.65 1.8 ;
         RECT 4.7 0 5.1 1.8 ;
@@ -2488,7 +2509,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__fill_1 0 0 ;
-  SIZE 0.35 BY 8.4 ;
+  SIZE 0.3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2497,7 +2518,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 0.35 8.4 ;
+        RECT 0 7.8 0.3 8.4 ;
     END
   END VDD
   PIN VSS
@@ -2506,7 +2527,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 0.35 0.6 ;
+        RECT 0 0 0.3 0.6 ;
     END
   END VSS
 END gf180mcu_osu_sc_gp12t3v3__fill_1
@@ -2515,7 +2536,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_16
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__fill_16 0 0 ;
-  SIZE 5.25 BY 8.4 ;
+  SIZE 5.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2524,7 +2545,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 5.25 8.4 ;
+        RECT 0 7.8 5.4 8.4 ;
     END
   END VDD
   PIN VSS
@@ -2533,7 +2554,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 5.25 0.6 ;
+        RECT 0 0 5.4 0.6 ;
     END
   END VSS
 END gf180mcu_osu_sc_gp12t3v3__fill_16
@@ -2542,7 +2563,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_2
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__fill_2 0 0 ;
-  SIZE 0.7 BY 8.4 ;
+  SIZE 0.6 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2551,7 +2572,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_2
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.9 0.7 8.4 ;
+        RECT 0 7.8 0.6 8.4 ;
     END
   END VDD
   PIN VSS
@@ -2560,7 +2581,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_2
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 0.7 0.6 ;
+        RECT 0 0 0.6 0.6 ;
     END
   END VSS
 END gf180mcu_osu_sc_gp12t3v3__fill_2
@@ -2569,7 +2590,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_4
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__fill_4 0 0 ;
-  SIZE 1.4 BY 8.4 ;
+  SIZE 1.5 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2578,7 +2599,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 1.4 8.4 ;
+        RECT 0 7.8 1.5 8.4 ;
     END
   END VDD
   PIN VSS
@@ -2587,7 +2608,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 1.4 0.6 ;
+        RECT 0 0 1.5 0.6 ;
     END
   END VSS
 END gf180mcu_osu_sc_gp12t3v3__fill_4
@@ -2596,7 +2617,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_8
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__fill_8 0 0 ;
-  SIZE 2.8 BY 8.4 ;
+  SIZE 3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2605,7 +2626,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_8
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 2.8 8.4 ;
+        RECT 0 7.8 3 8.4 ;
     END
   END VDD
   PIN VSS
@@ -2614,7 +2635,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__fill_8
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 2.8 0.6 ;
+        RECT 0 0 3 0.6 ;
     END
   END VSS
 END gf180mcu_osu_sc_gp12t3v3__fill_8
@@ -2623,7 +2644,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__inv_1 0 0 ;
-  SIZE 2.45 BY 8.4 ;
+  SIZE 2.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2632,7 +2653,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 2.45 8.4 ;
+        RECT 0 7.8 2.4 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
   END VDD
@@ -2642,7 +2663,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 2.45 0.6 ;
+        RECT 0 0 2.4 0.6 ;
         RECT 0.55 0 0.8 1.8 ;
     END
   END VSS
@@ -2678,7 +2699,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_16
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__inv_16 0 0 ;
-  SIZE 15.05 BY 8.4 ;
+  SIZE 15 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2687,7 +2708,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 15.05 8.4 ;
+        RECT 0 7.8 15 8.4 ;
         RECT 14.15 5.75 14.4 8.4 ;
         RECT 12.45 5.75 12.7 8.4 ;
         RECT 10.75 5.75 11 8.4 ;
@@ -2705,7 +2726,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_16
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 15.05 0.6 ;
+        RECT 0 0 15 0.6 ;
         RECT 14.15 0 14.4 1.8 ;
         RECT 12.45 0 12.7 1.8 ;
         RECT 10.75 0 11 1.8 ;
@@ -2757,7 +2778,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_2
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__inv_2 0 0 ;
-  SIZE 3.15 BY 8.4 ;
+  SIZE 3.3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2766,7 +2787,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_2
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 3.15 8.4 ;
+        RECT 0 7.8 3.3 8.4 ;
         RECT 2.3 5.75 2.55 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
@@ -2777,7 +2798,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_2
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 3.15 0.6 ;
+        RECT 0 0 3.3 0.6 ;
         RECT 2.25 0 2.5 1.8 ;
         RECT 0.55 0 0.8 1.8 ;
     END
@@ -2816,7 +2837,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_4
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__inv_4 0 0 ;
-  SIZE 4.9 BY 8.4 ;
+  SIZE 4.8 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2825,7 +2846,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 4.9 8.4 ;
+        RECT 0 7.8 4.8 8.4 ;
         RECT 3.95 5.75 4.2 8.4 ;
         RECT 2.25 5.75 2.5 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
@@ -2837,7 +2858,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__inv_4
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 4.9 0.6 ;
+        RECT 0 0 4.8 0.6 ;
         RECT 3.95 0 4.2 1.8 ;
         RECT 2.25 0 2.5 1.8 ;
         RECT 0.55 0 0.8 1.8 ;
@@ -2945,7 +2966,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifdown
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__lshifdown 0 0 ;
-  SIZE 5.25 BY 8.4 ;
+  SIZE 5.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -2954,7 +2975,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifdown
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 2.9 7.8 5.25 8.4 ;
+        RECT 2.9 7.8 5.4 8.4 ;
         RECT 3.45 5.75 3.75 8.4 ;
     END
   END VDD
@@ -2973,7 +2994,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifdown
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 5.25 0.6 ;
+        RECT 0 0 5.4 0.6 ;
         RECT 3.45 0 3.75 1.8 ;
         RECT 0.55 0 0.85 1.8 ;
     END
@@ -3023,7 +3044,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifup
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__lshifup 0 0 ;
-  SIZE 8.05 BY 8.4 ;
+  SIZE 8.1 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3041,7 +3062,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifup
     USE POWER ;
     PORT
       LAYER Metal1 ;
-        RECT 2.9 7.8 8.05 8.4 ;
+        RECT 2.9 7.8 8.1 8.4 ;
         RECT 6.05 5.75 6.35 8.4 ;
         RECT 4.35 5.75 4.65 8.4 ;
     END
@@ -3052,7 +3073,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifup
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 8.05 0.6 ;
+        RECT 0 0 8.1 0.6 ;
         RECT 6.05 0 6.35 1.8 ;
         RECT 4.35 0 4.65 1.8 ;
         RECT 0.55 0 0.85 1.8 ;
@@ -3118,7 +3139,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__mux2_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__mux2_1 0 0 ;
-  SIZE 4.9 BY 8.4 ;
+  SIZE 4.8 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3127,7 +3148,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__mux2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 4.9 8.4 ;
+        RECT 0 7.8 4.8 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
   END VDD
@@ -3137,11 +3158,11 @@ MACRO gf180mcu_osu_sc_gp12t3v3__mux2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 4.9 0.6 ;
+        RECT 0 0 4.8 0.6 ;
         RECT 0.55 0 0.8 1.8 ;
     END
   END VSS
-  PIN I0
+  PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -3153,8 +3174,8 @@ MACRO gf180mcu_osu_sc_gp12t3v3__mux2_1
       LAYER Via1 ;
         RECT 2.32 3.72 2.58 3.98 ;
     END
-  END I0
-  PIN I1
+  END A
+  PIN B
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -3166,8 +3187,8 @@ MACRO gf180mcu_osu_sc_gp12t3v3__mux2_1
       LAYER Via1 ;
         RECT 4.07 4.42 4.33 4.68 ;
     END
-  END I1
-  PIN S
+  END B
+  PIN Sel
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
@@ -3178,7 +3199,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__mux2_1
       LAYER Via1 ;
         RECT 0.57 3.02 0.83 3.28 ;
     END
-  END S
+  END Sel
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
@@ -3204,7 +3225,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__nand2_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__nand2_1 0 0 ;
-  SIZE 3.15 BY 8.4 ;
+  SIZE 3.3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3213,7 +3234,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__nand2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 3.15 8.4 ;
+        RECT 0 7.8 3.3 8.4 ;
         RECT 2.25 5.75 2.5 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
@@ -3224,7 +3245,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__nand2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 3.15 0.6 ;
+        RECT 0 0 3.3 0.6 ;
         RECT 2.1 0 2.35 1.8 ;
     END
   END VSS
@@ -3273,7 +3294,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__nor2_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__nor2_1 0 0 ;
-  SIZE 2.8 BY 8.4 ;
+  SIZE 3 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3282,7 +3303,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__nor2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 2.8 8.4 ;
+        RECT 0 7.8 3 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
   END VDD
@@ -3292,7 +3313,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__nor2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 2.8 0.6 ;
+        RECT 0 0 3 0.6 ;
         RECT 2.1 0 2.35 1.8 ;
         RECT 0.4 0 0.65 1.8 ;
     END
@@ -3342,7 +3363,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai21_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__oai21_1 0 0 ;
-  SIZE 3.85 BY 8.4 ;
+  SIZE 3.9 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3351,7 +3372,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai21_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 3.85 8.4 ;
+        RECT 0 7.8 3.9 8.4 ;
         RECT 2.95 5.75 3.2 8.4 ;
         RECT 0.65 5.75 0.9 8.4 ;
     END
@@ -3362,7 +3383,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai21_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 3.85 0.6 ;
+        RECT 0 0 3.9 0.6 ;
         RECT 1.35 0 1.6 1.5 ;
     END
   END VSS
@@ -3431,7 +3452,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai22_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__oai22_1 0 0 ;
-  SIZE 5.25 BY 8.4 ;
+  SIZE 5.1 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3440,7 +3461,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai22_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 5.25 8.4 ;
+        RECT 0 7.8 5.1 8.4 ;
         RECT 3.5 5.75 3.75 8.4 ;
         RECT 0.65 5.75 0.9 8.4 ;
     END
@@ -3451,7 +3472,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai22_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 5.25 0.6 ;
+        RECT 0 0 5.1 0.6 ;
         RECT 1.35 0 1.6 1.6 ;
     END
   END VSS
@@ -3538,7 +3559,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai31_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__oai31_1 0 0 ;
-  SIZE 4.9 BY 8.4 ;
+  SIZE 4.8 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3547,7 +3568,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai31_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 4.9 8.4 ;
+        RECT 0 7.8 4.8 8.4 ;
         RECT 3.85 5.75 4.1 8.4 ;
         RECT 1.05 5.75 1.3 8.4 ;
     END
@@ -3558,7 +3579,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__oai31_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 4.9 0.6 ;
+        RECT 0 0 4.8 0.6 ;
         RECT 2.25 0 2.5 1.5 ;
         RECT 0.55 0 0.8 1.8 ;
     END
@@ -3640,7 +3661,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__or2_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__or2_1 0 0 ;
-  SIZE 3.85 BY 8.4 ;
+  SIZE 3.9 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3649,7 +3670,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__or2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 3.85 8.4 ;
+        RECT 0 7.8 3.9 8.4 ;
         RECT 1.95 5.75 2.35 8.4 ;
     END
   END VDD
@@ -3659,7 +3680,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__or2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 3.85 0.6 ;
+        RECT 0 0 3.9 0.6 ;
         RECT 2.1 0 2.35 1.8 ;
         RECT 0.4 0 0.65 1.8 ;
     END
@@ -3719,7 +3740,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__tbuf_1 0 0 ;
-  SIZE 5.25 BY 8.4 ;
+  SIZE 5.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3728,7 +3749,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 5.25 8.4 ;
+        RECT 0 7.8 5.4 8.4 ;
         RECT 3.55 5.75 3.8 8.4 ;
         RECT 1.4 5.75 1.65 8.4 ;
     END
@@ -3739,7 +3760,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 5.25 0.6 ;
+        RECT 0 0 5.4 0.6 ;
         RECT 3.55 0 3.8 1.8 ;
         RECT 1.4 0 1.65 1.8 ;
     END
@@ -3814,7 +3835,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tieh
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__tieh 0 0 ;
-  SIZE 2.45 BY 8.4 ;
+  SIZE 2.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3823,7 +3844,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tieh
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 2.45 8.4 ;
+        RECT 0 7.8 2.4 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
   END VDD
@@ -3833,7 +3854,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tieh
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 2.45 0.6 ;
+        RECT 0 0 2.4 0.6 ;
         RECT 0.55 0 0.8 1.8 ;
     END
   END VSS
@@ -3862,7 +3883,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tiel
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__tiel 0 0 ;
-  SIZE 2.45 BY 8.4 ;
+  SIZE 2.4 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3871,7 +3892,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tiel
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 2.45 8.4 ;
+        RECT 0 7.8 2.4 8.4 ;
         RECT 0.55 5.75 0.8 8.4 ;
     END
   END VDD
@@ -3881,7 +3902,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tiel
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 2.45 0.6 ;
+        RECT 0 0 2.4 0.6 ;
         RECT 0.55 0 0.8 1.8 ;
     END
   END VSS
@@ -3910,7 +3931,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tinv_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__tinv_1 0 0 ;
-  SIZE 3.85 BY 8.4 ;
+  SIZE 3.9 BY 8.4 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -3919,7 +3940,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tinv_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 7.8 3.85 8.4 ;
+        RECT 0 7.8 3.9 8.4 ;
         RECT 1.4 5.75 1.65 8.4 ;
     END
   END VDD
@@ -3929,7 +3950,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tinv_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0 0 3.85 0.6 ;
+        RECT 0 0 3.9 0.6 ;
         RECT 1.4 0 1.65 1.8 ;
     END
   END VSS

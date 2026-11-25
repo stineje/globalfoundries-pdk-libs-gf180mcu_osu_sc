@@ -15,12 +15,13 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: gf180mcu_osu_sc_gp12t3v3__mux2_ |Circuit 2: gf180mcu_osu_sc_gp12t3v3__mux2_ 
 -------------------------------------------|-------------------------------------------
-I1                                         |B **Mismatch**                             
-I0                                         |A **Mismatch**                             
-S                                          |Sel **Mismatch**                           
+B                                          |B                                          
+A                                          |A                                          
+Sel                                        |Sel                                        
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 Y                                          |Y                                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for gf180mcu_osu_sc_gp12t3v3__mux2_1 and gf180mcu_osu_sc_gp12t3v3__mux2_1 altered to match.
-Cells failed matching, or top level cell failed pin matching.
+Cell pin lists are equivalent.
+Device classes gf180mcu_osu_sc_gp12t3v3__mux2_1 and gf180mcu_osu_sc_gp12t3v3__mux2_1 are equivalent.
+Circuits match uniquely.

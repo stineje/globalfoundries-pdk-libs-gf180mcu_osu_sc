@@ -32,7 +32,7 @@ END UNITS
 SITE gf180mcu_osu_sc_gp9t3v3
   SYMMETRY X Y ;
   CLASS core ;
-  SIZE 0.10 BY 6.300 ;
+  SIZE 0.30 BY 6.300 ;
 END gf180mcu_osu_sc_gp9t3v3
 
 PROPERTYDEFINITIONS

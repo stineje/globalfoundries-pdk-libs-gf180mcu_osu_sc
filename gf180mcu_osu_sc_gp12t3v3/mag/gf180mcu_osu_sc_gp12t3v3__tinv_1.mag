@@ -13,9 +13,9 @@
 # limitations under the License.
 magic
 tech gf180mcuC
-timestamp 1772989189
+timestamp 1780669623
 << nwell >>
-rect 0 104 77 168
+rect 0 104 78 168
 << nmos >>
 rect 19 19 25 36
 rect 36 19 42 36
@@ -129,12 +129,12 @@ rect 23 47 28 52
 rect 57 101 62 106
 rect 60 46 65 51
 << metal1 >>
-rect 0 163 77 168
+rect 0 163 78 168
 rect 0 158 11 163
 rect 16 158 34 163
 rect 39 158 57 163
-rect 62 158 77 163
-rect 0 156 77 158
+rect 62 158 78 163
+rect 0 156 78 158
 rect 11 147 16 149
 rect 10 117 11 120
 rect 10 115 16 117
@@ -167,12 +167,12 @@ rect 44 34 61 36
 rect 44 31 56 34
 rect 28 12 33 21
 rect 56 19 61 21
-rect 0 10 77 12
+rect 0 10 78 12
 rect 0 5 11 10
 rect 16 5 34 10
 rect 39 5 57 10
-rect 62 5 77 10
-rect 0 0 77 5
+rect 62 5 78 10
+rect 0 0 78 5
 << via1 >>
 rect 32 103 33 108
 rect 33 103 38 108
@@ -225,6 +225,6 @@ port 1 n
 rlabel metal2 46 77 46 77 1 Y
 port 6 n
 << properties >>
-string MASKHINTS_NPLUS 0 163 77 168
-string MASKHINTS_PPLUS 0 0 77 5
+string MASKHINTS_NPLUS 0 156 78 168
+string MASKHINTS_PPLUS 0 0 78 12
 << end >>

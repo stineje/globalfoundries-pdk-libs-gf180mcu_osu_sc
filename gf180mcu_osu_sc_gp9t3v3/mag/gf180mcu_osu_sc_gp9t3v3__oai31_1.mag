@@ -232,9 +232,9 @@ rect 73 44 75 50
 rect 65 43 75 44
 rect 66 36 72 43
 << labels >>
-rlabel psubdiffcont 13 8 13 8 1 VSS
+rlabel metal1 13 8 13 8 1 VSS
 port 7 n
-rlabel nsubdiffcont 13 118 13 118 1 VDD
+rlabel metal1 13 118 13 118 1 VDD
 port 6 n
 rlabel metal2 20 51 20 51 1 A2
 port 3 n

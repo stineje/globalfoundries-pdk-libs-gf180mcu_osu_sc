@@ -139,15 +139,15 @@ rect 13 48 15 54
 rect 21 48 23 54
 rect 13 47 23 48
 << labels >>
-rlabel psubdiffcont 13 7 13 7 1 VSS
+rlabel metal1 13 7 13 7 1 VSS
 port 4 n
-rlabel nsubdiffcont 13 119 13 119 1 VDD
+rlabel metal1 13 119 13 119 1 VDD
 port 3 n
 rlabel metal2 18 51 18 51 1 A
 port 1 n
 rlabel metal2 35 75 35 75 1 Y
 port 2 n
 << properties >>
-string MASKHINTS_NPLUS 0 114 96 126
-string MASKHINTS_PPLUS 0 0 96 12
+string MASKHINTS_NPLUS 0 114 66 126
+string MASKHINTS_PPLUS 0 0 66 12
 << end >>
