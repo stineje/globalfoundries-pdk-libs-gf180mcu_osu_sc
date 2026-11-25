@@ -1,4 +1,4 @@
-Oklahoma State University (OSU) standard cells for GF180MCU
+University of Nebraska-Lincoln (UNL) standard cells for GF180MCU
 ===========================================================
 
 This repository will contain a new set of standard cells for the
@@ -6,7 +6,7 @@ This repository will contain a new set of standard cells for the
 <https://github.com/google/gf180mcu-pdk>`_.
 
 These standard cells are being designed by James E. Stine, Jr. from the
-VLSI Computer Architecture Research Group at Oklahoma State University.
+VLSI Computer Architecture Research Group at the University of Nebraska-Lincoln.
 
 VLSI Computer Architecture Research Group
 =========================================
@@ -30,7 +30,7 @@ license text can be found in the `LICENSE <LICENSE>`_ file.
 
 ::
 
-   Copyright 2025  Board of Regents for the Oklahoma Agricultural and Mechanical Colleges
+   Copyright 2026 The Board of Regents of the University of Nebraska
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
